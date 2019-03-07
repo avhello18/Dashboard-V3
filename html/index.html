@@ -1,0 +1,2963 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>Business Dashboard</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+<link href="css/circle.css" rel="stylesheet" type="text/css">
+<script src="js/circles.js"></script>
+<link href="css/dashboard.css" rel="stylesheet" type="text/css" async>
+<link href = "css/jquery-ui.css" defer rel = "stylesheet" type="text/css">
+<link href="css/jquery.dataTables.min.css" defer rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<script src="js/highstock.js"></script>
+<script src="js/highcharts-3d.js"></script>
+<script src="js/jquery.dataTables.min.js" defer></script>
+<script src="js/bootstrap.js" defer></script>
+<script src="js/funnel.js"></script>
+<script src = "js/jquery-ui.js" defer></script>
+</head>
+<body>
+
+<div class="mobile-filter"><a href="javascript:void(0)"><img src="images/filter-icon.png"/></a></div>
+
+<!-- Back to top Start-->
+<div id="back-to-top" class="back-to-top"> <a href="javascript:void(0)"> <img src="images/back-to-top.png"/> </a> </div>
+<!-- Back to top Ends--> 
+
+<!--Header Top Bar Start-->
+<div class="header-advance-area">
+  <div class="header-top-area"> <a href="index.html" class="main-link"><img src="images/logo.png" alt=""></a>
+    <div class="header-title">
+      <!--Top Tabs Start-->
+      <div class="tabs-wrapper">
+        <ul class="nav nav-tabs">
+          <li class="first active"><a data-toggle="tab" href="#overview-section">Overview</a></li>
+          <li class="second"><a data-toggle="tab" href="#sales-section">Sales</a></li>
+          <li class="third"><a data-toggle="tab" href="#marketing-section">Marketing</a></li>
+          <li class="fourth"><a data-toggle="tab" href="#SRM-section">SRM</a></li>
+        </ul>
+        <div class="mob-view-all-filter"><a href="#"><i></i>view all filters</a></div>
+      </div>
+      <!--Top Tabs Ends--> 
+    
+    </div>
+    <div class="header-right">
+      <ul>
+        <li class="profiledd"> <a href="javascript:void(0)">
+            <img src="images/profile.jpg"/><span>Aastha Verma <i><img src="images/actiondd-arrow.png"></i></span></a> 
+            <div class="profile-dropdowndd">
+              <ul>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--Header Top Bar Ends--> 
+
+<!--All  Conrent Wrapper Start-->
+<div class="all-content-wrapper"> 
+  
+  <div class="bg"></div>
+
+  <!--Left Filter Start-->
+  <div class="left-wrapper">
+    <!-- <div class="loading-loader"><img src="images/loading.gif"/></div> -->
+    <div class="filterby-wrapper">
+      <div class="filterby-title">
+        <div>Filter by</div>
+        <!-- <a class="filter-viewall-link" href="javascript:void(0)">View all</a> -->
+        <a href="javascript:void(0)" class="filter-close-link"><i><img src="images/applied-filter-remove.png"></i></a>
+        </div>
+        
+        <!--Applied Filter Start-->
+        <div class="applied-filter-wrapper">
+          <div>
+            <div> <span>Data Science</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+          </div>
+          <div>
+            <button>Apply</button>
+            <a class="clear-all-link" href="javascript:void(0)">Clear All</a> 
+          </div>
+        </div>
+        <!--Applied Filter Start-->
+      <div class="filterby-content">
+        <div class="filter-by-date">
+          <div class="block">
+            <label>From</label>
+            <input type="text" class="datepicker" placeholder="Enter Date" />
+          </div>
+          <div class="block">
+            <label>To</label>
+            <input type="text" class="datepicker" placeholder="Enter Date" />
+          </div>
+        </div>
+        <div class="filter-by-month-year">
+          <div class="block">
+            <label>
+              <input type="radio" name="selectdate">
+              <span class="filter-checkbox"><i><img src="images/filter-checkbox-checked.png"/></i></span>
+              <span class="filter-text">Month till date</span>
+            </label>
+          </div>
+          <div class="block">
+            <label>
+              <input type="radio" name="selectdate">
+              <span class="filter-checkbox"><i><img src="images/filter-checkbox-checked.png"/></i></span>
+              <span class="filter-text">Year till date</span>
+            </label>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <div class="heading-title">
+              <div>Institute</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">IIM Kashipur</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">IIM Lucknow</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">IIM Jammu</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">XLRI</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">MICA</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Batch</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">XLRI-PM-03-1218-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">HR-07-1018-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">SM-01-02-2018-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">PF-07-0119-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">TM-05-1218-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">LSCM-01-0219-01</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Source</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Channel</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Corporate</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Call Center</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Vendor</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Facebook</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Google</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">TBS</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Infoedge</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">iimjobs</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Taboola</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Status</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <div class="legend-info">
+                <div class="closed"><i></i>Closed</div>
+                <div class="in-progress"><i></i>In Progress</div>
+                <div class="completed"><i></i>Completed</div>
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link"><i class="in-progress-symbol"></i>Enrollment in progress</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link"><i class="closed-symbol"></i>Enrollment Closed</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link"><i class="in-progress-symbol"></i>Classes in progress</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link"><i class="closed-symbol"></i>Classes Closed</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Category</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Business Management</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Finance</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Analytics</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">HR</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Brand Sales & Marketing</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Master Course</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Data Science</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Accounting & Auditing</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Digital Marketing</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Type of course</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Self-Paced</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Centre Based</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Sales</div>
+              <span></span></div>
+            <div class="filter-options">
+              <ul class="main-menu">
+                <li> <a href="javascript:void(0)" class="main-link"><i></i>Ritika Nayak</a>
+                  <ul>
+                    <li> <a href="javascript:void(0)" class="main-sub-link"><i></i>Deepak Yadav</a>
+                      <ul>
+                        <li><a href="javascript:void(0)" class="sub-link"><i></i>Poonam Saxsena</a></li>
+                        <li><a href="javascript:void(0)" class="sub-link"><i></i>Ranjan Singh</a></li>
+                      </ul>
+                    </li>
+                    <li> <a href="javascript:void(0)" class="main-sub-link"><i></i>Kanika Yadav</a>
+                      <ul>
+                        <li><a href="javascript:void(0)" class="sub-link"><i></i>Rishi Batra</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--Left Filter Ends--> 
+  
+  <!--Right Content Start-->
+  <div class="right-wrapper"> 
+    
+    
+    <!--Dashboard Wrappper Start-->
+    <div class="dashboard-wrapper">
+      <div class="dashboard-container"> 
+        
+        <!--Main Tab Content Start-->
+        <div class="tab-content"> 
+          <!--<div class="loading-loader"><img src="images/loading.gif"/></div>-->
+          <!-- Overview Section Start-->
+          <div id="overview-section" class="tab-pane fade in active"> 
+            
+            <!-- Overview Section Tab Content Start-->
+            <div class="tab-content"> 
+              
+              <!-- Overview Default Section Start-->
+              <div id="overview-default-section" class="tab-pane fade in active">
+                <div class="block-wrapper1">
+                  <div class="block-left">
+                    <ul>
+                      <li class="first">
+                        <div class="title">Revenue <span>(Lakhs)</span></div>
+                        <div class="title-value">
+                          <div class="block">
+                            <div>3400 <span>54%</span></div>
+                            <div class="progress">
+                              <div class="progress-bar" style="width: 20%"></div>
+                            </div>
+                            <div>Achieved</div>
+                          </div>
+                          <div class="block">
+                            <div>6789</div>
+                            <div>Target</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="second">
+                        <div class="title">Enrollments</div>
+                        <div class="title-value">
+                          <div class="block">
+                            <div>234 <span>54%</span></div>
+                            <div class="progress">
+                              <div class="progress-bar" style="width: 20%"></div>
+                            </div>
+                            <div>Achieved</div>
+                          </div>
+                          <div class="block">
+                            <div>546</div>
+                            <div>Target</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="third">
+                        <div class="title">
+                          <div>CPA</div>
+                          <div>
+                            <div>80%</div>
+                            <div>Target</div>
+                          </div>
+                        </div>
+                        <div class="title-value">
+                            <div class="circle" id="circles-1">circle</div>
+                            <div class="circle-title">% Achieved</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="block-right">
+                    <div class="detail-clock">
+                      <div class="left-block">
+                        <div class="chart-title">
+                          <div>Source Mix Revenue</div>
+                           <div>
+                             <div>50000</div>
+                             <div>Average Ticket Size <span>(Lakhs)</span></div>
+                           </div>
+                        </div>
+                        <div id="chart1" style="min-width: 100%; height: 230px;"></div>
+                      </div>
+                      <div class="overview-overlay">
+                          <ul>
+                              <li class="first">
+                                <div>Call Center</div>
+                                <div>72.6%</div>
+                              </li>
+                              <li class="second">
+                                <div>Channel</div>
+                                <div>13.1%</div>
+                              </li>
+                              <li class="third">
+                                <div>Corporate</div>
+                                <div>11.9%</div>
+                              </li>
+                              <li class="fourth">
+                                <div>Referrals</div>
+                                <div>2.4%</div>
+                              </li>
+                          </ul>
+                        </div>
+                       <div class="block-right-last">
+                        <ul>
+                          <li class="first">
+                            <div class="title">CPL</div>
+                            <div class="title-value">
+                              <div class="block">
+                                <div>67</div>
+                                <div class="progress">
+                                  <div class="progress-bar" style="width: 20%"></div>
+                                </div>
+                                <div>Achieved</div>
+                              </div>
+                              <div class="block">
+                                <div>200</div>
+                                <div>Target</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="second">
+                            <div class="title">Conversion rate</div>
+                            <div class="title-value">
+                              <div class="block">
+                                <div>80%</div>
+                                <div>Target</div>
+                              </div>
+                              <div class="venn-chart">
+                                <div></div>
+                                <div></div>
+                              </div>
+                              <div class="block">
+                                <div>27%</div>
+                                <div>Achieved</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+              <!-- Overview Default Section Ends--> 
+            </div>
+            <!-- Overview Section Tab Content Ends--> 
+            
+          </div>
+          <!-- Overview Section Start--> 
+          
+          <!-- Sales Section Start-->
+          <div id="sales-section" class="tab-pane fade">
+            <div class="sales-tabs-wrapper">
+              <ul class="nav nav-tabs">
+                <li class="first active"><a data-toggle="tab" href="#call-centre-section"><i></i>Call center</a></li>
+                <li class="second"><a data-toggle="tab" href="#channel-section"><i></i>Channel</a></li>
+                <li class="third"><a data-toggle="tab" href="#corporate-section"><i></i>Corporate</a></li>
+              </ul>
+            </div>
+            <div class="tab-content">
+              <div id="call-centre-section" class=" tab-pane fade in active">
+                <div class="block-wrapper2">
+                  <!--<div class="inr-lakh">* Revenue in (INR Lakhs) </div>-->
+                  <div class="block-tabs-wrapper">
+                    <div class="block-title">Call Center</div>
+                    <div>
+                      <ul class="nav nav-tabs">
+                        <li class="first active"><a data-toggle="tab" href="#revenue-section"><i></i>Revenue</a></li>
+                        <li class="second"><a data-toggle="tab" href="#enrollments-section"><i></i>Enrollments</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div id="revenue-section" class="tab-pane fade in active">
+                      <div class="block-main">
+                         <div class="block-left">
+                          <ul>
+                            <li class="first">
+                             <div class="block">
+                                <div class="title-value">34</div>
+                                <div class="title">Total Batches</div>
+                              </div> 
+                            </li>
+                            <li class="second">
+                              <div class="block">
+                                <div class="title-value">100 <span>54%</span></div>
+                                <div class="progress">
+                                  <div class="progress-bar" style="width: 20%"></div>
+                                </div>
+                                 <div class="title">Actuals</div>
+                              </div>  
+                               <div class="block">
+                                <div class="title-value">5000</div>
+                                <div class="title">Target</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="block-right">
+                          <ul>
+                            <li class="first">
+                              <div class="tabs-block">
+                                <div id="chart4" style="min-width:100%; height: 326px;"></div>
+                              </div>
+                            </li>
+                            <!-- <li class="second">
+                              <div class="tabs-block">
+                                <div id="chart22" style="min-width:100%; height: 300px;"></div>
+                              </div>
+                            </li> -->
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="enrollments-section" class="tab-pane fade">
+                      <div class="block-main">
+                        <div class="block-left">
+                          <ul>
+                            <li class="first">
+                             <div class="block">
+                                <div class="title-value">34</div>
+                                <div class="title">Total Batches</div>
+                              </div> 
+                            </li>
+                            <li class="second">
+                              <div class="block">
+                                <div class="title-value">50 <span>54%</span></div>
+                                <div class="progress">
+                                  <div class="progress-bar" style="width: 20%"></div>
+                                </div>
+                                 <div class="title">Actuals</div>
+                              </div>  
+                               <div class="block">
+                                <div class="title-value">5000</div>
+                                <div class="title">Target</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="block-right">
+                          <ul>
+                            <li class="first">
+                              <div class="tabs-block">
+                                <div id="chart9" class="chart-enrollments"style="min-width:100%; height: 300px;"></div>
+                              </div>
+                            </li>
+                           <!-- <li class="second">
+                              <div class="tabs-block">
+                                <div id="chart23" style="min-width:100%; height: 300px;"></div>
+                              </div>
+                            </li> -->
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                </div>
+                <div class="block-main-wrapper">
+                  <div class="block-wrapper11">
+                    <div class="block-title">CC Manager Wise Performance</div>
+                    <div class="block-tabs-wrapper">
+                      <div>
+                        <ul class="nav nav-tabs">
+                          <li class="first active"><a data-toggle="tab" href="#ccrevenue-section"><i></i>Revenue</a></li>
+                          <li class="second"><a data-toggle="tab" href="#ccenrollments-section"><i></i>Enrollments</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <div id="ccrevenue-section" class="tab-pane fade in active">
+                        <div class="block-main">
+                          <div class="block-right">
+                            <ul>
+                              <li class="first">
+                                <div class="tabs-block">
+                                  <div id="chart15" style="min-width:100%; height: 300px;"></div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="ccenrollments-section" class="tab-pane fade"> 
+                        <!-- <div class="block-title">CC Manager Wise Performance</div> -->
+                        <div class="block-main">
+                          <div class="block-right">
+                            <ul>
+                              <li class="first">
+                                <div class="tabs-block">
+                                  <div id="chart16" style="min-width:100%; height: 300px;"></div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                  </div>
+                  <div class="block-wrapper3">
+                    <div class="chart-title">
+                      <div>Conversion Rate</div>
+                      <div>
+                        <div class="block">
+                          <div>30%</div>
+                          <div>Target</div>
+                        </div>
+                        <div class="venn-chart">
+                          <div></div>
+                          <div></div>
+                        </div>
+                        <div class="block">
+                          <div>10%</div>
+                          <div>Actual</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block-left">
+                      <div id="chart5" style="min-width:100%; height:300px;"></div>
+                    </div>
+                    <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                  </div>
+                </div>
+                <div class="block-wrapper6">
+                  <div class="block-right">
+                    <ul>
+                      <li class="first">
+                        <div class="title-top">
+                          <div class="title">Productivity Percentage</div>
+                          <div class="title-bottom">
+                            <div class="title-block">56%
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 20%"></div>
+                              </div>
+                              <span>Actual</span>
+                            </div>
+                            <div class="title-block">34%<span>Target</span></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="second">
+                        <div class="title-bottom">
+                          <div class="title-top">
+                            <div class="title">Headcount</div>
+                            <div class="title-value">50</div>
+                          </div>
+                          <div class="title-block"><i>1</i>Sales Head</div>
+                          <div class="title-block"><i>34</i>Team Lead</div>
+                          <div class="title-block"><i>4</i>Sales Manager</div>
+                          <div class="title-block"><i>5</i>Agents</div>
+                        </div>
+                        <div class="title-bottom">
+                           <div class="title-top">
+                            <div class="title">Attrition</div>
+                            <div class="title-value">50</div>
+                          </div>
+                          <div class="title-block"><i>34</i><span>Voluntary</span></div>
+                          <div class="title-block"><i>56</i><span>Involuntary</span></div>
+                        </div>
+                      </li>
+                    
+                    </ul>
+                  </div>
+                  <div class="block-left">
+                    <div class="chart-title">Productivity Percentage Managerwise</div>
+                    <div id="chart10" style="min-width:100%; height: 300px;"></div>
+                    <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                  </div>
+                </div>
+                <div class="block-wrapper13">
+                  <div class="block-main-wrapper">
+                    <div class="block-wrapper8">
+                      <div class="block-left">
+                        <ul>
+                          <li class="first">
+                            <div class="chart-title">Call Quality</div>
+                            <div class="top-info">
+                              <div class="block">
+                                <div>100</div>
+                                <div>Audits planned</div>
+                              </div>
+                              <div class="block">
+                                <div>90</div>
+                                <div>Audits achieved</div>
+                              </div>
+                              <div class="block">
+                                <div>30</div>
+                                <div>Feedback</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="chart-title"> Disposition wise </div>
+                            <div id="chart18" style="min-width:100%; height: 210px;"></div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="block-right">
+                        <ul>
+                          <li class="first">
+                            <div class="chart-title"> TL wise scorecard </div>
+                            <div class="tabs-block">
+                              <div id="chart11" style="min-width:100%; height: 378px;"></div>
+                              <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="qualitytable-wrapper">
+                    <table>
+                      <tr>
+                        <th>counsellor name</th>
+                        <th>audit count</th>
+                        <th>overall</th>
+                        <th>dec'18 wk2</th>
+                        <th>dec'18 wk1</th>
+                        <th>Nov'18 wk1</th>
+                        <th>Noov'18 wk2</th>
+                      </tr>
+                      <tr>
+                        <td>Smriti Bajpai</td>
+                        <td>12</td>
+                        <td>86</td>
+                        <td>90</td>
+                        <td>81</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Rishi Batra</td>
+                        <td>12</td>
+                        <td><span>86</span></td>
+                        <td><span>86</span></td>
+                        <td><span>86</span></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Anup Gupta</td>
+                        <td>12</td>
+                        <td><span>86</span></td>
+                        <td><span>86</span></td>
+                        <td><span>86</span></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Varun Batra</td>
+                        <td>12</td>
+                        <td><span>86</span></td>
+                        <td><span>86</span></td>
+                        <td><span>86</span></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Ashis Chouhan</td>
+                        <td>12</td>
+                        <td><span>86</span></td>
+                        <td><span>86</span></td>
+                        <td><span>86</span></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="expand-collapse"> <a href="javascript:void(0)" class="Collapse-link">Collapse</a> <a href="javascript:void(0)" class="Expand-link">Expand</a> </div>
+                </div>
+              </div>
+              <div id="channel-section" class="tab-pane fade">
+                <div class="block-wrapper5">
+                  <div class="block-tabs-wrapper">
+                    <div class="block-title">Channel</div>
+                    <div>
+                      <ul class="nav nav-tabs">
+                        <li class="first active"><a data-toggle="tab" href="#channel-revenue-section"><i></i>Revenue</a></li>
+                        <li class="second"><a data-toggle="tab" href="#channel-enrollments-section"><i></i>Enrollments</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div id="channel-revenue-section" class="tab-pane fade in active">
+                      <div class="block-main">
+                         <div class="block-left">
+                          <ul>
+                            <li class="first">
+                             <div class="block">
+                                <div class="title-value">34</div>
+                                <div class="title">Total Batches</div>
+                              </div> 
+                            </li>
+                            <li class="second">
+                              <div class="block">
+                                <div class="title-value">100 <span>54%</span></div>
+                                <div class="progress">
+                                  <div class="progress-bar" style="width: 20%"></div>
+                                </div>
+                                 <div class="title">Actuals</div>
+                              </div>  
+                               <div class="block">
+                                <div class="title-value">5000</div>
+                                <div class="title">Target</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="block-right">
+                          <ul>
+                            <li class="first">
+                              <div class="tabs-block">
+                                <div id="chart7" style="min-width:100%; height: 300px;"></div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="channel-enrollments-section" class="tab-pane fade">
+                      <div class="block-main">
+                         <div class="block-left">
+                          <ul>
+                            <li class="first">
+                             <div class="block">
+                                <div class="title-value">34</div>
+                                <div class="title">Total Batches</div>
+                              </div> 
+                            </li>
+                            <li class="second">
+                              <div class="block">
+                                <div class="title-value">50 <span>54%</span></div>
+                                <div class="progress">
+                                  <div class="progress-bar" style="width: 20%"></div>
+                                </div>
+                                 <div class="title">Actuals</div>
+                              </div>  
+                               <div class="block">
+                                <div class="title-value">5000</div>
+                                <div class="title">Target</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="block-right">
+                          <ul>
+                            <li class="first">
+                              <div class="tabs-block">
+                                <div id="chart12" style="min-width:100%; height: 300px;"></div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                </div>
+              </div>
+              <div id="corporate-section" class="tab-pane fade">
+                <div class="block-wrapper9">
+                  <div class="block-tabs-wrapper">
+                    <div class="block-title">Corporate</div>
+                    <div>
+                      <ul class="nav nav-tabs">
+                        <li class="first active"><a data-toggle="tab" href="#corporate-revenue-section"><i></i>Revenue</a></li>
+                        <li class="second"><a data-toggle="tab" href="#corporate-enrollments-section"><i></i>Enrollments</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div id="corporate-revenue-section" class="tab-pane fade in active">
+                      <div class="block-main">
+                         <div class="block-left">
+                          <ul>
+                            <li class="first">
+                             <div class="block">
+                                <div class="title-value">34</div>
+                                <div class="title">Total Batches</div>
+                              </div> 
+                            </li>
+                            <li class="second">
+                              <div class="block">
+                                <div class="title-value">100 <span>54%</span></div>
+                                <div class="progress">
+                                  <div class="progress-bar" style="width: 20%"></div>
+                                </div>
+                                 <div class="title">Actuals</div>
+                              </div>  
+                               <div class="block">
+                                <div class="title-value">5000</div>
+                                <div class="title">Target</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="block-right">
+                          <ul>
+                            <li class="first">
+                              <div class="tabs-block">
+                                <div id="chart8" style="min-width:100%; height: 300px;"></div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="corporate-enrollments-section" class="tab-pane fade">
+                      <div class="block-main">
+                         <div class="block-left">
+                          <ul>
+                            <li class="first">
+                             <div class="block">
+                                <div class="title-value">34</div>
+                                <div class="title">Total Batches</div>
+                              </div> 
+                            </li>
+                            <li class="second">
+                              <div class="block">
+                                <div class="title-value">100 <span>54%</span></div>
+                                <div class="progress">
+                                  <div class="progress-bar" style="width: 20%"></div>
+                                </div>
+                                 <div class="title">Actuals</div>
+                              </div>  
+                               <div class="block">
+                                <div class="title-value">5000</div>
+                                <div class="title">Target</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="block-right">
+                          <ul>
+                            <li class="first">
+                              <div class="tabs-block">
+                                <div id="chart13" style="min-width:100%; height: 300px;"></div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Sales Section Ends--> 
+          
+          <!-- Marketing Section Start-->
+          <div id="marketing-section" class="tab-pane fade">
+            <div class="block-wrapper7">
+              <ul>
+                <li class="first">
+                  <div class="block">
+                    <div class="icons"><img src="images/marketing-budget.png"></div>
+                    <div class="chart-title-value">23.53</div>
+                     <div class="chart-title">Budget</div>
+                  </div>
+                </li>
+                <li class="second">
+                  <div class="block">
+                    <div class="icons"><img src="images/marketing-spends.png"></div>
+                    <div class="chart-title-value">6.44</div>
+                    <div class="chart-title">Spends</div>
+                  </div>
+                  <div class="block">
+                    <div class="circle" id="circles-2"></div>
+                    <div class="chart-title">%exhausted</div>
+                  </div>
+                </li>
+                <li class="third"> 
+                  <div class="block">
+                    <div class="icons"><img src="images/marketing-revenue-target.png"></div>
+                    <div class="chart-title-value">56.10</div>
+                    <div class="chart-title">Revenue target</div>
+                  </div>
+                </li>
+                <li class="fourth">
+                  <div class="block">
+                    <div class="icons"><img src="images/marketing-revenue-achieved.png"></div>
+                    <div class="chart-title-value">17.6</div>
+                    <div class="chart-title">revenue achieved</div>
+                  </div>
+                  <div class="block">
+                    <div class="circle" id="circles-3"></div>
+                     <div class="chart-title">% achieved</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="block-wrapper4">
+              <div class="block-left">
+                <ul>
+                  <li class="first">
+                    <div class="title">
+                      <div>CPA</div>
+                     </div> 
+                    <div class="title-value">
+                        <div>
+                            <div>80%</div>
+                            <div class="circle-title">Target</div>
+                          </div>
+                        <div>
+                          <div class="circle">27%</div>
+                          <div class="circle-title">Achieved</div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="second">
+                    <div class="title">CPL</div>
+                    <div class="title-value">
+                      <div class="block">
+                        <div>3400</div>
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 20%"></div>
+                        </div>
+                        <div>Actual</div>
+                      </div>
+                      <div class="block">
+                        <div>6789</div>
+                        <div>Target</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="third">
+                    <div class="title">Conversion rate</div>
+                      <div class="title-value">
+                          <div class="block">
+                            <div>80%</div>
+                            <div>Target</div>
+                          </div>
+                          <div class="venn-chart">
+                            <div></div>
+                            <div></div>
+                          </div>
+                          <div class="block">
+                            <div>27%</div>
+                            <div>Achieved</div>
+                          </div>
+                      </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="block-right">
+                <div class="chart-title">
+                  <div>Lead Volume<span>(Vendor Wise)</span></div>
+                  <div>
+                      <div class="block">
+                        <div>Target</div>
+                        <div>650</div>
+                      </div>
+                      <div class="block">
+                        <div>Actual</div>
+                        <div>500</div>
+                      </div>
+                    </div>
+                </div>
+                <div id="chart6" style="min-width:100%; height:350px;"></div>
+                <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+              </div>
+            </div>
+            <div class="block-wrapper14">
+              <div class="block-main">
+                <div class="block-left">
+                  <div class="chart-title">
+                    <div>Leads Quality<span>(vendor Wise)</span></div>
+                    <div>
+                      <div class="block">
+                        <div>Target</div>
+                        <div>30%</div>
+                      </div>
+                      <div class="block">
+                        <div>Actual</div>
+                        <div>10%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="chart20" style="min-width:100%; height:350px;"></div>
+                  <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                </div>
+                <div class="block-right">
+                  <div class="blockwrapper">
+                    <div class="title">Un-addressed Leads</div>
+                      <div class="title-value">
+                          <div class="block">
+                            <div>45000<span>50%</span></div>
+                         </div>
+                      </div>
+                      <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                  </div>
+                <div class="blockwrapper">
+                    <div class="chart-title">
+                      <div> Invalid Leads</div>
+                    </div>
+                    <div id="chart19" style="min-width:100%; height:215px;"></div>
+                    <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                </div>
+
+              </div>
+              </div>
+            </div>
+            <div class="block-wrapper12">
+              <div class="block-main">
+                <div class="block-left">
+                  <div class="chart-title">SEO</div>
+                  <ul>
+                    <li class="first">
+                      <div class="main-block">
+                        <div class="title">Leads</div>
+                        <div class="title-value">
+                          <div class="block">
+                            <div>5000</div>
+                            <div>Target</div>
+                          </div>
+                          <div class="block">
+                            <div>4000</div>
+                            <div>Actual</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="main-block">
+                        <div class="title">Conversions</div>
+                        <div class="title-value">
+                          <div class="block">
+                            <div>50</div>
+                            <div>Target</div>
+                          </div>
+                          <div class="block">
+                            <div>60</div>
+                            <div>Actual</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="main-block">
+                        <div class="title">Conversion rate</div>
+                        <div class="title-value">
+                          <div class="block">
+                            <div>5%</div>
+                            <div>Target</div>
+                          </div>
+                          <div class="block">
+                            <div>10%</div>
+                            <div>Actual</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="block-right">
+                  <div class="chart-title">Leads Funnel</div>
+                  <div id="chart17" style="min-width:100%; height:370px;"></div>
+                  <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Marketing Section Ends--> 
+          
+          <!--SRM Section Start-->
+          <div id="SRM-section" class="tab-pane fade"> 
+            <!-- <div class="inr-lakh">* Avg. ticket size in (INR Lakhs) </div> -->
+            <div class="block-wrapper10">
+              <div class="block-left">
+                <div class="chart-title">
+                  <div>Referrals</div>
+                  <div>
+                    <div class="block">
+                      <div>30</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="chart14" style="min-width:100%; height:295px;"></div>
+                <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+              </div>
+              <div class="block-right">
+                <div class="chart-title">
+                  <div>Calls Connected</div>
+                  <div>
+                    <div class="block">
+                      <div>120</div>
+                      <div>Overall</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="chart21" style="min-width:100%; height:260px;"></div>
+                <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+              </div>
+            </div>
+
+
+
+            <div class="block-wrapper16">
+              <div class="block-left">
+                <div class="chart-title">
+                  <div>Dropouts</div>
+                  <div>
+                    <div class="block">
+                      <div>30</div>
+                      <div>Target</div>
+                    </div>
+                    <div class="block">
+                      <div>10</div>
+                      <div>Actual</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="chart22" style="min-width:100%; height:260px;"></div>
+                <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+              </div>
+            </div>
+
+
+
+          </div>
+          <!--SRM Section Ends-->
+
+
+          
+        </div>
+        <!--Main Tab Content Ends--> 
+        
+      </div>
+    </div>
+    <!--Dashboard Wrappper Ends--> 
+    
+  </div>
+  <!--Right Content Ends--> 
+  
+</div>
+<!--All  Conrent Wrapper Ends--> 
+
+
+<div class="maskbg"></div>
+
+ <script>
+         jQuery(document).ready(function(){
+         
+             jQuery('#overview-table').DataTable({
+                 "pageLength":12,
+                 "lengthChange": false,
+                 "ordering": false,
+                 "scrollX": true
+                 
+             });
+         
+             jQuery('#enrollments-table').DataTable({
+                 "pageLength":12,
+                 "lengthChange": false,
+                 "ordering": false,
+                 "scrollX": true
+             });
+         
+         
+         
+            jQuery('.filterby-content .heading-title').click(function(){
+         
+                jQuery(this).toggleClass('active');
+            });
+
+            jQuery('.mobile-filter a').click(function(){
+                jQuery('.all-content-wrapper .left-wrapper').toggleClass('open');
+                jQuery('.maskbg').toggle();
+            });
+
+
+            
+         
+             /*$(window).scroll(function() {    
+                 var scroll = $(window).scrollTop();
+         
+                  //>=, not <=
+                 if (scroll >= 1) {
+                     //filter-fixed, not filter-fixed - caps H
+                     $(".all-content-wrapper").addClass("filter-fixed");
+                 }
+             }); //missing );*/
+         
+         
+         
+         
+         
+             jQuery(window).scroll(function() {
+                 if (jQuery(this).scrollTop()) {
+                     jQuery('.back-to-top:hidden').stop(true, true).fadeIn();
+                 } else {
+                     jQuery('.back-to-top').stop(true, true).fadeOut();
+                 }
+             });
+         
+             jQuery('.back-to-top a').on('click', function(){
+                 jQuery('html, body').stop().animate({
+                     scrollTop: 0
+                 }, 500, 'linear');
+                 return false;
+         });
+         
+             jQuery('.filter-dialog-wrapper .close-link ,.filter-actions a').click(function(){
+                 jQuery('.filter-dialog-wrapper').hide();
+                 jQuery('.maskbg').hide();
+             });
+         
+         
+             jQuery('.filter-viewall-link').click(function(){
+                 jQuery('.filter-dialog-wrapper').show();
+                 jQuery('.maskbg').show();
+             });
+
+
+
+             jQuery('.filter-close-link').click(function(){
+                 jQuery('.all-content-wrapper .left-wrapper.open').removeClass('open');
+                 jQuery('.maskbg').hide();
+                 
+             });
+
+             jQuery('.header-top-area .header-right ul li.profiledd').click(function(){
+                 jQuery(this).find(".profile-dropdowndd").slideToggle("fast");
+             });
+
+            $(document).on("click", function(event){
+                var $trigger = $(".header-top-area .header-right ul li.profiledd");
+                if($trigger !== event.target && !$trigger.has(event.target).length){
+                    $(".profile-dropdowndd").slideUp("fast");
+                }            
+            });
+
+            
+         
+             
+            
+         
+         
+             jQuery('.filter-dialog-wrapper .filter-dialog-container .left-section a:not(:first)').addClass('inactive');
+             jQuery('.filter-hidden').hide();
+             jQuery('.filter-hidden:first').show();
+         
+             jQuery('.filter-dialog-wrapper .filter-dialog-container .left-section a').click(function(){
+               var t = jQuery(this).attr('id');
+               if(jQuery(this).hasClass('inactive')){ //this is the start of our condition 
+                 jQuery('.filter-dialog-wrapper .filter-dialog-container .left-section a').addClass('inactive');           
+                 jQuery(this).removeClass('inactive');
+         
+                 jQuery('.filter-hidden').hide();
+                 jQuery('#'+ t + '-filter').fadeIn('slow');
+              }
+             });
+         
+             
+                jQuery('.lead-label-checkbox'). click(function(){
+                     if(jQuery(this). prop("checked") == true){
+                         alert("Checkbox is checked." );
+                         jQuery(this).parent().parent().find('.checkbox').attr("checked",true);
+                     }
+                     else if($(this). prop("checked") == false){
+                         jQuery(this).parent().parent().find('.checkbox').attr("checked",false);
+                         alert("Checkbox is unchecked." );
+                     };
+             });
+         
+                jQuery('.Expand-link').hide();
+         
+                 jQuery('.Collapse-link').click(function(){
+                     jQuery('.qualitytable-wrapper').slideUp();
+                     jQuery('.Collapse-link').hide();
+                     //jQuery('.Expand-link').show();
+                 });
+         
+                 /* jQuery('.Expand-link').click(function(){
+                     jQuery('.Expand-link').hide();
+                     jQuery('.Collapse-link').hide();
+                     jQuery('.qualitytable-wrapper').slideUp();
+                 });*/
+         
+                 
+         
+         
+         
+            jQuery('.datepicker').datepicker({
+                 changeYear: true,
+                 changeMonth: true,
+                 showButtonPanel: true,
+                 
+         
+             });
+         
+         });
+         
+            Highcharts.setOptions({
+             colors: ['#2c324f', '#0097a7', '#DDDF00', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
+         
+         });
+            Highcharts.chart('chart1', {
+             chart: {
+                 plotBackgroundColor: null,
+                 plotBorderWidth: null,
+                 plotShadow: false,
+                 type: 'pie',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             tooltip: {
+                 pointFormat: '{series.name}: <b>{point.y}</b> <br/> Enrollments:<b>{point.myData}</b>'
+             },
+             colors: ['#067180', '#0ae1ff', '#ff9a25','#157d00'],    
+             
+             plotOptions: {
+                 pie: {
+                     size:'100%',
+                     allowPointSelect: true,
+                     cursor: 'pointer',
+                     dataLabels: {
+                         enabled: false,
+                         format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                         style: {
+                             color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                         }
+                     },
+                     showInLegend: false,
+                     
+                 }
+             },
+         
+             legend: {
+                     layout: 'vertical',
+                     align: 'left',
+                     verticalAlign: 'bottom',
+                     x:-10,
+                     y:0,
+                     floating: true,
+                     borderWidth: 0,
+                     
+                 },
+             series: [{
+                 name: 'Revenue',
+                 colorByPoint: true,
+                 data: [{
+                     name: 'Call Center',
+                     y: 61,
+                     sliced: true,
+                     selected: true,
+                     myData : 10
+                 }, {
+                     name: 'Channel',
+                     y: 11,
+                     myData : 5
+                 }, {
+                     name: 'Corporate',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'Referrals',
+                     y: 2,
+                     myData :2
+                 }]
+             }]
+         });
+         
+         
+
+         
+         Highcharts.chart('chart18', {
+             chart: {
+                 plotBackgroundColor: null,
+                 plotBorderWidth: null,
+                 plotShadow: false,
+                 type: 'pie',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 },
+                 options3d: {
+                    enabled: false,
+                    alpha: 45
+                }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             tooltip: {
+                 pointFormat: '{series.name}: <b>{point.y}</b> <br/> Enrollments:<b>{point.myData}</b>'
+             },
+             colors: ['#1a237e', '#568bdb', '#283593', '#3949ab'],    
+             
+             plotOptions: {
+                 pie: {
+                     size:'100%',
+                     innerSize:150,
+                     depth:0,
+                     allowPointSelect: true,
+                     cursor: 'pointer',
+                     dataLabels: {
+                         enabled: false,
+                         format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                         style: {
+                             color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                         }
+                     },
+                     showInLegend: true,
+                     
+                 }
+             },
+         
+             legend: {
+                    layout: 'vertical',
+                     align: 'left',
+                     verticalAlign: 'bottom',
+                     floating:false,
+                     x:0,
+                     y:0,
+                     floating: true,
+                     borderWidth: 0,
+                     
+                 },
+             series: [{
+                 name: 'Calls',
+                 colorByPoint: true,
+                 data: [{
+                     name: 'Follow up',
+                     y: 61,
+                     sliced: true,
+                     selected: true,
+                     myData : 10
+                 }, {
+                     name: 'Prospect',
+                     y: 11,
+                     myData : 5
+                 }, {
+                     name: 'not interested',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'Fallout',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'Cross Sell',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'next batch',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'new lead',
+                     y: 10,
+                     myData : 2
+                 }]
+             }]
+         });
+         
+
+          Highcharts.chart('chart19', {
+             chart: {
+                 plotBackgroundColor: null,
+                 plotBorderWidth: null,
+                 plotShadow: false,
+                 type: 'pie',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 },
+                 options3d: {
+                    enabled: false,
+                    alpha: 45
+                }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             tooltip: {
+                 pointFormat: '{series.name}: <b>{point.y}</b> <br/> Enrollments:<b>{point.myData}</b>'
+             },
+             colors: ['#1a237e', '#568bdb', '#283593', '#3949ab'],    
+             
+             plotOptions: {
+                 pie: {
+                     size:'100%',
+                     innerSize:150,
+                     depth:0,
+                     allowPointSelect: true,
+                     cursor: 'pointer',
+                     dataLabels: {
+                         enabled: false,
+                         format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                         style: {
+                             color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                         }
+                     },
+                     showInLegend: true,
+                     
+                 }
+             },
+         
+             legend: {
+                    layout: 'vertical',
+                     align: 'left',
+                     verticalAlign: 'bottom',
+                     floating:false,
+                     x:0,
+                     y:10,
+                     floating: true,
+                     borderWidth: 0,
+                     
+                 },
+             series: [{
+                 name: 'Revenue',
+                 colorByPoint: true,
+                 data: [{
+                     name: 'Wrong Number',
+                     y: 61,
+                     sliced: true,
+                     selected: true,
+                     myData : 10
+                 }, {
+                     name: 'Auto Retired',
+                     y: 11,
+                     myData : 5
+                 }, {
+                     name: 'Not Enquired',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'Not Eligible',
+                     y: 10,
+                     myData : 2
+                 }]
+             }]
+         });
+         
+         
+         
+         
+         Highcharts.chart('chart4', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'ADPR-01-00817-01',
+                     'MR-01-00817-01',
+                     'ADPR-01-00817-01',
+                     'MR-01-00817-01',
+                     'ADPR-01-00817-01',
+                     'MR-01-00817-01',
+                     'ADPR-01-00817-01',
+                     'MR-01-00817-01',
+                     'ADPR-01-00817-01',
+                     'MR-01-00817-01',
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Revenue'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4,106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5,98.5]
+         
+             }]
+         });
+
+
+         /*Highcharts.chart('chart22', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'April',
+                     'May',
+                     'June',
+                     'July',
+                     'August',
+                     'September',
+                     'October',
+                     'November',
+                     'December',
+                     
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Revenue'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5]
+         
+             }]
+         });*/
+
+         /*Highcharts.chart('chart23', {
+             chart: {
+                 type: 'spline',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'April',
+                     'May',
+                     'June',
+                     'July',
+                     'August',
+                     'September',
+                     'October',
+                     'November',
+                     'December',
+                     
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Revenue'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5]
+         
+             }]
+         });*/
+         
+         
+         Highcharts.chart('chart11', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'Kshitij',
+                     'Robert',
+                     'Prateek',
+                     'Avdesh',
+                     'Nitin',
+                     'Ajay'
+                 ],
+                 crosshair: true
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Call Quality Details'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 series: {
+                     states: {
+                         hover: {
+                             enabled: true,
+                             brightness: -0.3
+                         }
+                     },
+                     cursor: 'pointer',
+                      shadow: false,
+                       borderColor: '#ddd',
+                      point: {
+                         events: {
+                             click: function (event) {
+                                 //this.brightness: -0.3;
+                                 //console.log(this);
+                                 if(this.colorIndex == 1){
+                                  //alert('Category: ' + this.category + ', value: ' + this.y);  
+                                  //this.update({ color: '#fe5800' }, true, false);
+                                     jQuery('.qualitytable-wrapper').slideDown();
+                                     jQuery('.Collapse-link').show(); 
+                                 }
+                                 
+                             },
+         
+                         }
+                     }
+                 },
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [99.9, 79.5, 106,55,87,98]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,45,76,50]
+         
+             }]
+         });
+         
+         
+         Highcharts.chart('chart9', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'ADPR-01-00817-01',
+                     'MR-01-00817-01',
+                     'ADPR-01-00817-01',
+                     'MR-01-00817-01',
+                     'ADPR-01-00817-01',
+                     'MR-01-00817-01',
+                     'ADPR-01-00817-01',
+                     'MR-01-00817-01',
+                     'ADPR-01-00817-01',
+                     'MR-01-00817-01',
+                 ],
+                 crosshair: true
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Enrollments'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [29, 20, 55,29, 20, 55,29, 20, 55,55]
+         
+             }, {
+                 name: 'Actual',
+                 data: [23, 10, 34,23, 10, 34,23, 10, 34,34]
+         
+             }]
+         });
+         
+         
+         Highcharts.chart('chart12', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                    'Aimkaam',
+                     'Eduwin',
+                     'Vagmine',
+                     'Knowledge',
+                     
+                 ],
+                 crosshair: true
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Enrollments'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [28, 15, 75, 68]
+         
+             }, {
+                 name: 'Actual',
+                 data: [23, 10, 34, 6]
+         
+             }]
+         });
+         
+         
+         Highcharts.chart('chart13', {
+         
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+         
+              credits: {
+                 enabled: false
+             },
+             title: {
+                 text: ''
+             },
+             colors: ['#2c324f', '#0097a7','#ff9a25', '#43841c'],
+             xAxis: {
+                 categories: ['Ankit', 'Amit', 'Anirudh', 'Abhishek']
+             },
+         
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 allowDecimals: false,
+                 min: 0,
+                 title: {
+                     text: 'Enrollments'
+                 }
+             },
+         
+             tooltip: {
+                 formatter: function () {
+                     return '<b>' + this.x + '</b><br/>' +
+                         this.series.name + ': ' + this.y
+                 }
+             },
+         
+             plotOptions: {
+                 column: {
+                     stacking: 'normal'
+                 }
+             },
+         
+             series: [{
+                 name: 'Nominated Target',
+                 data: [5, 3, 4, 7],
+                 stack: 'male'
+             }, {
+                 name: 'Nominated Actual',
+                 data: [3, 4, 4, 2],
+                 stack: 'male'
+             }, {
+                 name: 'Dedicated Target',
+                 data: [2, 5, 6, 2],
+                 stack: 'female'
+             }, {
+                 name: 'Dedicated Actual',
+                 data: [3, 2, 4, 4],
+                 stack: 'female'
+             }]
+         });
+         
+         
+         Highcharts.chart('chart15', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                    'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                 ],
+                 crosshair: true
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Revenue'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [99.9, 79.5, 106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5]
+         
+             }]
+         });
+         
+         Highcharts.chart('chart16', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                    'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                 ],
+                 crosshair: true
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Enrollments'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [99.9, 79.5, 106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5]
+         
+             }]
+         });
+         
+         Highcharts.chart('chart17', {
+             chart: {
+                 type: 'funnel'
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 },
+             colors: ['#568bdb', '#568bdb', '#3949ab', '#315282' ,'#9fa8da','#47549d'],
+             plotOptions: {
+                 size:'100%',
+                 series: {
+                     dataLabels: {
+                         enabled: true,
+                         format: '<b>{point.name}</b> ({point.y:,.0f})',
+                         color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black',
+                         softConnector: true
+                     },
+                     center: ['40%', '50%'],
+                     neckWidth: '30%',
+                     neckHeight: '25%',
+                     width: '80%'
+                 }
+             },
+             legend: {
+                 enabled: false
+             },
+             series: [{
+                 name: 'Leads',
+                 data: [
+                     ['Total', 15654],
+                     ['Connected', 4064],
+                     ['Marketing Qualified', 1987],
+                     ['Sales Qualified', 976],
+                     ['Follow Up', 800],
+                     ['Conversion', 676],
+                     
+                    
+                    
+                    
+                     
+                 ]
+             }]
+         });
+         
+         
+         Highcharts.chart('chart5', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                 ],
+                 crosshair: true
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Conversion rate (%)'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y:.1f}%</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [99.9, 79.5, 106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5]
+         
+             }]
+         });
+         
+         Highcharts.chart('chart10', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                 ],
+                 crosshair: true
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Productivity (%)'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y:.1f}%</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [99.9, 79.5, 106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5]
+         
+             }]
+         });
+         
+         Highcharts.chart('chart6', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'Google',
+                     'Facebook',
+                     'Website',
+                     'Taboola',
+                     'Iimjobs',
+                     'CiteHR',
+                     'Chat',
+                     'Te_St',
+                     'InfoEdge',
+                     'Te_Focus',
+                     'Mark',
+                     
+                 ],
+                 crosshair: true
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Lead Volume'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [99.9, 79.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 110.6]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6]
+         
+             }]
+         });
+         
+         
+         Highcharts.chart('chart20', {
+         
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#3949ab', '#568bdb','#315282', '#9fa8da'],
+             xAxis: {
+                 categories: [
+                     'Google',
+                     'Facebook',
+                     'Website',
+                     'Taboola',
+                     'Iimjobs',
+                     'CiteHR',
+                     'Chat',
+                     'Te_St',
+                     'InfoEdge',
+                     'Te_Focus',
+                     'Mark',
+                     
+                 ],
+                   min: 0,
+                   max:6,
+                   scrollbar: {
+                         enabled: true
+                   },
+                 crosshair: true,
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Lead Quality'
+                 },
+         
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [99, 79, 106, 129, 87, 176, 135, 148, 216, 194, 66]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83, 44, 34, 93, 106, 84, 33, 104, 91, 83, 34]
+         
+             }]
+         });
+         
+         Highcharts.chart('chart14', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'Sangeeta',
+                     'Asim',
+                     'Tuli',
+                     'Shilpi',
+                     
+                 ],
+                 crosshair: true
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Referrals'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [149, 79, 106, 129]
+         
+             }, {
+                type: 'column',
+                 name: 'Actual',
+                 data: [83, 78, 98, 93]
+         
+             }]
+         });
+
+
+
+         Highcharts.chart('chart22', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'Sangeeta',
+                     'Asim',
+                     'Tuli',
+                     'Shilpi',
+                     
+                 ],
+                 crosshair: true
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Dropouts'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [149, 79, 106, 129]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83, 78, 98, 93]
+         
+             }]
+         });
+         
+         
+         Highcharts.chart('chart21', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             xAxis: {
+                 categories: [
+                     'Sangeeta',
+                     'Asim',
+                     'Tuli',
+                     'Shilpi',
+                     
+                 ],
+                 crosshair: true
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Calls Connected'
+                 }
+             },
+             colors: ['#315282'],
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'No of Connected Calls',
+                 data: [149, 79, 106, 129]
+         
+             }]
+         });
+         
+         Highcharts.chart('chart7', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+            colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'Aimkaam',
+                     'Eduwin',
+                     'Vagmine',
+                     'Knowledge',
+                     
+                     
+                     
+                 ],
+                 crosshair: true
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Revenue'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [99.9, 79.5, 106.4, 129.2]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5, 93.4]
+         
+             }]
+         });
+         
+         Highcharts.chart('chart8', {
+         
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+         
+              credits: {
+                 enabled: false
+             },
+             title: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb','#ff9a25', '#43841c'],
+
+             xAxis: {
+                 categories: ['Ankit', 'Amit', 'Anirudh', 'Abhishek']
+             },
+         
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 allowDecimals: false,
+                 min: 0,
+                 title: {
+                     text: 'Revenue'
+                 }
+             },
+         
+             tooltip: {
+                 formatter: function () {
+                     return '<b>' + this.x + '</b><br/>' +
+                         this.series.name + ': ' + this.y
+                 }
+             },
+         
+             plotOptions: {
+                 column: {
+                     stacking: 'normal'
+                 }
+             },
+         
+             series: [{
+                 name: 'Nominated Target',
+                 data: [5, 3, 4, 7],
+                 stack: 'male'
+             }, {
+                 name: 'Nominated Actual',
+                 data: [3, 4, 4, 2],
+                 stack: 'male'
+             }, {
+                 name: 'Dedicated Target',
+                 data: [2, 5, 6, 2],
+                 stack: 'female'
+             }, {
+                 name: 'Dedicated Actual',
+                 data: [3, 2, 4, 4],
+                 stack: 'female'
+             }]
+         });
+
+
+     Circles.create({
+        id:           'circles-1',
+        value:        27,
+        radius:       60,
+        width:        6,
+        duration:     1,
+        colors:       [ '#162a57','#7da7d9']
+    });
+
+     Circles.create({
+        id:           'circles-2',
+        value:        27,
+        radius:       40,
+        width:        6,
+        duration:     1,
+        colors:       [ '#fff','#4c6283']
+    });
+
+     Circles.create({
+        id:           'circles-3',
+        value:        27,
+        radius:       40,
+        width:        6,
+        duration:     1,
+        colors:       [ '#fff','#4c6283']
+    });
+
+    /* Circles.create({
+        id:           'circles-4',
+        value:        27,
+        radius:       60,
+        width:        6,
+        duration:     1,
+        colors:       [ '#162a57','#7da7d9']
+    });
+*/
+         
+         
+      </script>
+
+</body>
+</html>

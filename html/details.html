@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard Details</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+<link href="css/dashboard.css" rel="stylesheet" type="text/css">
+<script src="js/highstock.js"></script>
+<script src="js/jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div id="back-to-top" class="back-to-top"><a href="javascript:void(0)"><img src="images/back-to-top.png"/></a></div>
+    
+		<div class="header-advance-area">
+			<div class="header-top-area">
+				<a href="index.html" class="main-link"><img src="images/logo.png" alt=""></a>
+                <div class="header-right">
+					<ul>
+						<li>
+							<a href="javascript:void(0)"><img src="images/profile.jpg"/><span>Aastha Verma <i><img src="images/actiondd-arrow.png"></i></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+        <div class="all-content-wrapper">
+            <div class="bg"></div>
+            <div class="detail-wrapper">
+                <div class="detail-container">
+                    <div class="tab-content">            
+                      <div class="breadcrumb-wrapper">
+                       <ol>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="listing.html">Batch</a></li>
+                           <li class="active">Executive Development Program</li>
+                       </ol>     
+                     </div> 
+
+                     <div class="landing-title">
+                         <div>Executive Development Program</div>
+                         <div class="info-block">
+                            <div class="block">
+                                <div>Institute Name</div>
+                                <div>XLRI Jamshedpur</div>
+                            </div>
+                            <div class="block">
+                                <div>Batch Code</div>
+                                <div>XLRI-PM-03-1218-01</div>
+                            </div>
+                            <div class="block">
+                                <div>Start Date</div>
+                                <div>2018-12-02</div>
+                            </div>
+                            <div class="block">
+                                <div>Completion Date</div>
+                                <div>2019-06-02</div>
+                            </div>
+                        </div>
+                     </div>
+
+                          
+                    <div class="top-info-block">
+                       <ul>
+                            <li class="first">
+                                <div class="title-block">Revenue <span>(Lakhs)</span></div>
+                                <div class="title-value">
+                                    <div class="block">
+                                        Target<span>2334</span>
+                                    </div>
+                                    <div class="block">
+                                        Actual<span>1054</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="second">
+                                <div class="title-block">enrollments</div>
+                                <div class="title-value">
+                                    <div class="block">
+                                        Target<span>220</span>
+                                    </div>
+                                    <div class="block">
+                                        Actual<span>65</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="third">
+                                <div class="title-block">cpa%</div>
+                                <div class="title-value">
+                                    <div class="block">
+                                        Target<span>80%</span>
+                                    </div>
+                                    <div class="block">
+                                        Actual<span>56%</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="fourth">
+                                <div class="title-block">Conversion Rate</div>
+                                <div class="title-value">
+                                    <div class="block">
+                                        Target<span>2334</span>
+                                    </div>
+                                    <div class="block">
+                                        Actual<span>2323</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="first">
+                                <div class="title-block">Budget <span>(Lakhs)</span></div>
+                                <div class="title-value">23.5</div>
+                            </li>
+                            <li class="second">
+                                <div class="title-block">Spends <span>(Lakhs)</span></div>
+                                <div class="title-value">6.44</div>
+                            </li>
+                            <li class="third">
+                                <div class="title-block">%exhausted</div>
+                                <div class="title-value">27%</div>
+                            </li>
+                         </ul>
+                    </div>
+
+                    <div class="chart-block-wrapper1">
+                        <ul>
+                            <li class="first">
+                                <div class="title">Source Mix Revenue</div>
+                                <div id="chart2" style="min-width:100%; height: 210px;"></div>
+                                <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                            </li>
+                            <li class="second">
+                                <div class="title">Conversion rate<span>(Manager wise)</span></div>
+                                <div id="chart1" style="min-width:100%; height: 210px;"></div>
+                                <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                            </li>
+                            <li class="third">
+                                <div class="title">Productivity<span>(Manager Wise)</span></div>
+                                <div id="chart3" style="min-width:100%; height: 210px;"></div>
+                                <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="chart-block-wrapper2">
+                        <ul>
+                            <li class="first">
+                                <div class="title">CPA Vendor wise</div>
+                                <div id="chart4" style="min-width:100%; height: 210px;"></div>
+                                <div class="bottom-list">
+                                    <div class="list-block">
+                                        <div class="heading">CPA impact due to Lead Volume <span>1.6%</span></div>
+                                        <div class="heading">CPA impact due to Conversion Rate<span>0.09%</span></div>
+                                        <div class="heading">CPA impact due to Lead Quality<span>1.2%</span></div>
+                                    </div>
+                                </div>
+                                <div class="view-detail-link"><a href="listing.html">Know more</a>
+                                </div>
+                            </li>
+                            <li class="second">
+                                <div class="title">
+                                    <div>Lead Volume</div>
+                                    <div>
+                                        <div class="block">
+                                            <div class="title">Target</div>
+                                            <div class="title-value">5000</div>
+                                        </div>
+                                        <div class="block">
+                                            <div class="title">Actual</div>
+                                            <div class="title-value">5000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="chart5" style="min-width:100%; height: 250px;"></div>
+                                <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="chart-block-wrapper3">
+                      <div class="block-main">
+                        <div class="block-left">
+                          <div class="chart-title">
+                            <div>Leads Quality<span>(vendor Wise)</span></div>
+                            <div>
+                              <div class="block">
+                                <div>Target</div>
+                                <div>30%</div>
+                              </div>
+                              <div class="block">
+                                <div>Actual</div>
+                                <div>10%</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="chart20" style="min-width:100%; height:368px;"></div>
+                          <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                        </div>
+                        <div class="block-right">
+                          <div class="blockwrapper">
+                            <div class="title">Un-addressed Leads</div>
+                              <div class="title-value">
+                                  <div class="block">
+                                    <div>45000<span>50%</span></div>
+                                 </div>
+                              </div>
+                              <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                          </div>
+                        <div class="blockwrapper">
+                            <div class="chart-title">
+                              <div> Invalid Leads</div>
+                            </div>
+                            <div id="chart19" style="min-width:100%; height:215px;"></div>
+                            <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                        </div>
+
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="chart-block-wrapper4">
+                          <div class="block-main-wrapper">
+                            <div class="block-wrapper8">
+                              <div class="block-left">
+                                <ul>
+                                  <li class="first">
+                                    <div class="chart-title">Call Quality</div>
+                                    <div class="top-info">
+                                      <div class="block">
+                                        <div>100</div>
+                                        <div>Audits planned</div>
+                                      </div>
+                                      <div class="block">
+                                        <div>90</div>
+                                        <div>Audits achieved</div>
+                                      </div>
+                                      <div class="block">
+                                        <div>30</div>
+                                        <div>Feedback</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="chart-title"> Disposition wise </div>
+                                    <div id="chart18" style="min-width:100%; height: 210px;"></div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="block-right">
+                                <ul>
+                                  <li class="first">
+                                    <div class="chart-title"> TL wise scorecard </div>
+                                    <div class="tabs-block">
+                                      <div id="chart11" style="min-width:100%; height: 378px;"></div>
+                                      <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="qualitytable-wrapper">
+                            <table>
+                              <tr>
+                                <th>counsellor name</th>
+                                <th>audit count</th>
+                                <th>overall</th>
+                                <th>dec'18 wk2</th>
+                                <th>dec'18 wk1</th>
+                                <th>Nov'18 wk1</th>
+                                <th>Noov'18 wk2</th>
+                              </tr>
+                              <tr>
+                                <td>Smriti Bajpai</td>
+                                <td>12</td>
+                                <td>86</td>
+                                <td>90</td>
+                                <td>81</td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Rishi Batra</td>
+                                <td>12</td>
+                                <td><span>86</span></td>
+                                <td><span>86</span></td>
+                                <td><span>86</span></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Anup Gupta</td>
+                                <td>12</td>
+                                <td><span>86</span></td>
+                                <td><span>86</span></td>
+                                <td><span>86</span></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Varun Batra</td>
+                                <td>12</td>
+                                <td><span>86</span></td>
+                                <td><span>86</span></td>
+                                <td><span>86</span></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Ashis Chouhan</td>
+                                <td>12</td>
+                                <td><span>86</span></td>
+                                <td><span>86</span></td>
+                                <td><span>86</span></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </table>
+                          </div>
+                        <div class="expand-collapse"> <a href="javascript:void(0)" class="Collapse-link">Collapse</a> <a href="javascript:void(0)" class="Expand-link">Expand</a> </div>
+                    </div>
+
+                    </div>     
+                </div>
+        </div>
+         </div>
+
+
+          
+
+<script>
+
+jQuery(document).ready(function(){
+
+	
+
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop()) {
+            jQuery('.back-to-top:hidden').stop(true, true).fadeIn();
+        } else {
+            jQuery('.back-to-top').stop(true, true).fadeOut();
+        }
+    });
+
+    jQuery('.back-to-top a').on('click', function(){
+        jQuery('html, body').stop().animate({
+            scrollTop: 0
+        }, 500, 'linear');
+        return false;
+});
+
+    jQuery('.tabs .revenue-tab').click(function(){
+        jQuery(this).addClass('selected');
+        jQuery('.tabs .enrollments-tab').removeClass('selected');
+        jQuery('.tabs-block .chart-revenue').show();
+        jQuery('.tabs-block .chart-enrollments').hide();
+    });
+    jQuery('.tabs .enrollments-tab').click(function(){
+        jQuery(this).addClass('selected');
+        jQuery('.tabs .revenue-tab').removeClass('selected');
+        jQuery('.tabs-block .chart-enrollments').show();
+        jQuery('.tabs-block .chart-revenue').hide();
+    });
+
+
+    jQuery('.Expand-link').hide();
+         
+     jQuery('.Collapse-link').click(function(){
+         jQuery('.qualitytable-wrapper').slideUp();
+         jQuery('.Collapse-link').hide();
+     });
+
+    
+});
+
+
+
+
+	Highcharts.setOptions({
+   colors: ['#2c324f', '#0097a7', '#DDDF00', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
+
+
+});
+	
+
+Highcharts.chart('chart1', {
+    chart: {
+        type: 'column',
+        style: {
+            fontFamily: 'latobold',
+            fontSize:14
+        }
+    },
+    title: {
+        text: ''
+    },
+    credits: {
+        enabled: false
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: { 
+        categories: [
+            'Kanika Kathuria',
+            'Deepak Yadav',
+            'Rachit Vohra',
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        gridLineWidth: 0,
+        min: 0,
+        title: {
+            text: 'Conversion %'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:12px;  font-weight:bold;">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y}</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    colors: ['#315282', '#568bdb'],
+    series: [{
+        name: 'Target',
+        data: [28, 10, 60]
+
+    }, {
+        name: 'Actual',
+        data: [23, 6, 34]
+
+    }]
+});
+
+Highcharts.chart('chart2', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie',
+        style: {
+            fontFamily: 'latobold',
+            fontSize:14
+        }
+    },
+    title: {
+        text: ''
+    },
+    credits: {
+        enabled: false
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.y}</b> <br/> Enrollments:<b>{point.myData}</b>'
+    },
+    colors: ['#067180', '#0ae1ff', '#ff9a25','#157d00'], 
+    plotOptions: {
+        pie: {
+            size:'100%',
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+            },
+            showInLegend: true
+        }
+    },
+    legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom',
+            x:0,
+            y:0,
+            floating: false,
+            borderWidth: 0,
+            
+        },
+    series: [{
+        name: 'INR',
+        colorByPoint: true,
+        data: [{
+            name: 'Call Center',
+            y: 61,
+            sliced: true,
+            selected: true,
+            myData : 10
+        }, {
+            name: 'Channel',
+            y: 11,
+            myData : 5
+        }, {
+            name: 'Corporate',
+            y: 10,
+            myData : 2
+        }]
+    }]
+});
+
+Highcharts.chart('chart3', {
+    chart: {
+        type: 'column',
+        style: {
+            fontFamily: 'latobold',
+            fontSize:14
+        }
+    },
+    title: {
+        text: ''
+    },
+    colors: ['#315282', '#568bdb'],
+    credits: {
+        enabled: false
+    },
+    subtitle: {
+        text: ''
+    },
+
+    xAxis: {
+        categories: [
+           'Kanika Kathuria',
+            'Deepak Yadav',
+            'Rachit Vohra',
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        gridLineWidth: 0,
+        min: 0,
+        title: {
+            text: 'Productivity %'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:12px font-weight:bold;">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y}</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Target',
+        data: [26, 80, 95]
+
+    }, {
+        name: 'Actual',
+        data: [23, 10, 34]
+
+    }]
+});
+
+
+
+Highcharts.chart('chart4', {
+    chart: {
+        type: 'column',
+        style: {
+            fontFamily: 'latobold',
+            fontSize:14
+        }
+    },
+    title: {
+        text: ''
+    },
+    colors: ['#315282', '#568bdb'],
+    credits: {
+        enabled: false
+    },
+    subtitle: {
+        text: ''
+    },
+
+    xAxis: {
+        categories: [
+           'Google',
+         'Facebook',
+         'Website',
+         'Taboola',
+         'Iimjobs',
+         'CiteHR',
+         'Chat',
+         'Te_St',
+         'InfoEdge',
+         'Te_Focus',
+         'Mark',
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        gridLineWidth: 0,
+        min: 0,
+        title: {
+            text: 'CPA'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:12px font-weight:bold;">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y}</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Target',
+        data: [26, 80, 95,26, 80, 95,26, 80, 95,26, 80]
+
+    }, {
+        name: 'Actual',
+        data: [23, 10, 34,95,26, 80, 95,26, 80, 95,26]
+
+    }]
+});
+
+
+Highcharts.chart('chart5', {
+    chart: {
+        type: 'column',
+        style: {
+            fontFamily: 'latobold',
+            fontSize:14
+        }
+    },
+    title: {
+        text: ''
+    },
+    colors: ['#315282', '#568bdb'],
+    credits: {
+        enabled: false
+    },
+    subtitle: {
+        text: ''
+    },
+
+    xAxis: {
+        categories: [
+           'Google',
+         'Facebook',
+         'Website',
+         'Taboola',
+         'Iimjobs',
+         'CiteHR',
+         'Chat',
+         'Te_St',
+         'InfoEdge',
+         'Te_Focus',
+         'Mark',
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        gridLineWidth: 0,
+        min: 0,
+        title: {
+            text: 'Lead Volume'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:12px font-weight:bold;">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y}</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Target',
+        data: [26, 80, 95,26, 80, 95,26, 80, 95,26, 80]
+
+    }, {
+        name: 'Actual',
+        data: [23, 10, 34,95,26, 80, 95,26, 80, 95,26]
+
+    }]
+});
+
+
+Highcharts.chart('chart20', {
+         
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#3949ab', '#568bdb','#315282', '#9fa8da'],
+             xAxis: {
+                 categories: [
+                     'Google',
+                     'Facebook',
+                     'Website',
+                     'Taboola',
+                     'Iimjobs',
+                     'CiteHR',
+                     'Chat',
+                     'Te_St',
+                     'InfoEdge',
+                     'Te_Focus',
+                     'Mark',
+                     
+                 ],
+                
+                 crosshair: true,
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Lead Quality'
+                 },
+         
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [99, 79, 106, 129, 87, 176, 135, 148, 216, 194, 66]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83, 44, 34, 93, 106, 84, 33, 104, 91, 83, 34]
+         
+             }]
+         });
+
+
+ Highcharts.chart('chart19', {
+             chart: {
+                 plotBackgroundColor: null,
+                 plotBorderWidth: null,
+                 plotShadow: false,
+                 type: 'pie',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 },
+                 options3d: {
+                    enabled: false,
+                    alpha: 45
+                }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             tooltip: {
+                 pointFormat: '{series.name}: <b>{point.y}</b> <br/> Enrollments:<b>{point.myData}</b>'
+             },
+             colors: ['#1a237e', '#568bdb', '#283593', '#3949ab'],    
+             
+             plotOptions: {
+                 pie: {
+                     size:'100%',
+                     innerSize:150,
+                     depth:0,
+                     allowPointSelect: true,
+                     cursor: 'pointer',
+                     dataLabels: {
+                         enabled: false,
+                         format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                         style: {
+                             color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                         }
+                     },
+                     showInLegend: true,
+                     
+                 }
+             },
+         
+             legend: {
+                    layout: 'vertical',
+                     align: 'left',
+                     verticalAlign: 'bottom',
+                     floating:false,
+                     x:0,
+                     y:10,
+                     floating: true,
+                     borderWidth: 0,
+                     
+                 },
+             series: [{
+                 name: 'Revenue',
+                 colorByPoint: true,
+                 data: [{
+                     name: 'Wrong Number',
+                     y: 61,
+                     sliced: true,
+                     selected: true,
+                     myData : 10
+                 }, {
+                     name: 'Auto Retired',
+                     y: 11,
+                     myData : 5
+                 }, {
+                     name: 'Not Enquired',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'Not Eligible',
+                     y: 10,
+                     myData : 2
+                 }]
+             }]
+         }); 
+
+ Highcharts.chart('chart11', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'Kshitij',
+                     'Robert',
+                     'Prateek',
+                     'Avdesh',
+                     'Nitin',
+                     'Ajay'
+                 ],
+                 crosshair: true
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Call Quality Details'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 series: {
+                     states: {
+                         hover: {
+                             enabled: true,
+                             brightness: -0.3
+                         }
+                     },
+                     cursor: 'pointer',
+                      shadow: false,
+                       borderColor: '#ddd',
+                      point: {
+                         events: {
+                             click: function (event) {
+                                 //this.brightness: -0.3;
+                                 //console.log(this);
+                                 if(this.colorIndex == 1){
+                                  //alert('Category: ' + this.category + ', value: ' + this.y);  
+                                  //this.update({ color: '#fe5800' }, true, false);
+                                     jQuery('.qualitytable-wrapper').slideDown();
+                                     jQuery('.Collapse-link').show(); 
+                                 }
+                                 
+                             },
+         
+                         }
+                     }
+                 },
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [99.9, 79.5, 106,55,87,98]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,45,76,50]
+         
+             }]
+         }); 
+   
+Highcharts.chart('chart18', {
+             chart: {
+                 plotBackgroundColor: null,
+                 plotBorderWidth: null,
+                 plotShadow: false,
+                 type: 'pie',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 },
+                 options3d: {
+                    enabled: false,
+                    alpha: 45
+                }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             tooltip: {
+                 pointFormat: '{series.name}: <b>{point.y}</b> <br/> Enrollments:<b>{point.myData}</b>'
+             },
+             colors: ['#1a237e', '#568bdb', '#283593', '#3949ab'],    
+             
+             plotOptions: {
+                 pie: {
+                     size:'100%',
+                     innerSize:150,
+                     depth:0,
+                     allowPointSelect: true,
+                     cursor: 'pointer',
+                     dataLabels: {
+                         enabled: false,
+                         format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                         style: {
+                             color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                         }
+                     },
+                     showInLegend: true,
+                     
+                 }
+             },
+         
+             legend: {
+                    layout: 'vertical',
+                     align: 'left',
+                     verticalAlign: 'bottom',
+                     floating:false,
+                     x:0,
+                     y:0,
+                     floating: true,
+                     borderWidth: 0,
+                     
+                 },
+             series: [{
+                 name: 'Calls',
+                 colorByPoint: true,
+                 data: [{
+                     name: 'Follow up',
+                     y: 61,
+                     sliced: true,
+                     selected: true,
+                     myData : 10
+                 }, {
+                     name: 'Prospect',
+                     y: 11,
+                     myData : 5
+                 }, {
+                     name: 'not interested',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'Fallout',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'Cross Sell',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'next batch',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'new lead',
+                     y: 10,
+                     myData : 2
+                 }]
+             }]
+         });
+                       
+
+</script>
+</body>
+</html>
