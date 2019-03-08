@@ -1348,6 +1348,7 @@ body {
 .dashboard-wrapper .dashboard-container .block-wrapper5 .block-left ul li:first-child .block:first-child .title{font-weight: bold;}
 
 .dashboard-wrapper .dashboard-container .corporatetable-wrapper{padding:5px;}
+.dashboard-wrapper .dashboard-container .corporatetable-wrapper .table-wrapper{overflow: auto;}
 .dashboard-wrapper .dashboard-container .block-wrapper18 .block-left{flex-direction: column;}
 .dashboard-wrapper .dashboard-container .block-wrapper18 .block-left ul{flex-direction: column;}
 .dashboard-wrapper .dashboard-container .block-wrapper18 .block-left ul li{margin-left: 0; flex-direction: row;}
