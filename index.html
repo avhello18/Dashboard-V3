@@ -2210,9 +2210,7 @@
                  crosshair: true
              },
              yAxis: {
-                  gridLineWidth: 0,
-                 minorGridLineWidth:0,
-                 min: 0,
+                gridLineWidth: 0,
                  title: {
                      text: 'Revenue (lakhs)'
                  }
@@ -2233,11 +2231,11 @@
              },
              series: [{
                  name: 'Target',
-                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4]
+                 data: [90, 79.5, 106.4,90, -79.5, 106.4,90, 79.5, 106.4]
          
              }, {
                  name: 'Actual',
-                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5]
+                 data: [83.6, 78.8, 98.5,83.6, -78, 98.5,83.6, -78, 98.5]
          
              }]
          });
