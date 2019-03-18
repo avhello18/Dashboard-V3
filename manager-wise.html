@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>Business Dashboard</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+<link href="css/circle.css" rel="stylesheet" type="text/css">
+<script src="js/circles.js"></script>
+<link href="css/dashboard.css" rel="stylesheet" type="text/css" async>
+<link href = "css/jquery-ui.css" defer rel = "stylesheet" type="text/css">
+<link href="css/jquery.dataTables.min.css" defer rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<script src="js/highstock.js"></script>
+<script src="js/highcharts-3d.js"></script>
+<script src="js/jquery.dataTables.min.js" defer></script>
+<script src="js/bootstrap.js" defer></script>
+<script src="js/funnel.js"></script>
+<script src = "js/jquery-ui.js" defer></script>
+</head>
+<body>
+
+<div class="mobile-filter"><a href="javascript:void(0)"><img src="images/filter-icon.png"/></a></div>
+
+<!-- Back to top Start-->
+<div id="back-to-top" class="back-to-top"> <a href="javascript:void(0)"> <img src="images/back-to-top.png"/> </a> </div>
+<!-- Back to top Ends--> 
+
+<!--Header Top Bar Start-->
+<div class="header-advance-area">
+  <div class="header-top-area"> <a href="index.html" class="main-link"><img src="images/logo.png" alt=""></a>
+    <div class="header-title">
+      <!--Top Tabs Start-->
+      <div class="tabs-wrapper">
+        <ul class="nav nav-tabs">
+          <li class="first active"><a data-toggle="tab" href="#manager-section-1">Manager 1</a></li>
+        </ul>
+        <div class="mob-view-all-filter"><a href="#"><i></i>view all filters</a></div>
+      </div>
+      <!--Top Tabs Ends--> 
+    
+    </div>
+    <div class="header-right">
+      <ul>
+        <li class="profiledd"> <a href="javascript:void(0)">
+            <img src="images/profile.jpg"/><span>Aastha Verma <i><img src="images/actiondd-arrow.png"></i></span></a> 
+            <div class="profile-dropdowndd">
+              <ul>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--Header Top Bar Ends--> 
+
+<!--All  Conrent Wrapper Start-->
+<div class="all-content-wrapper"> 
+  
+  <div class="bg"></div>
+
+  <!--Left Filter Start-->
+  <div class="left-wrapper">
+    <!-- <div class="loading-loader"><img src="images/loading.gif"/></div> -->
+    <div class="filterby-wrapper">
+      <div class="filterby-title">
+        <div>Filter by</div>
+        <!-- <a class="filter-viewall-link" href="javascript:void(0)">View all</a> -->
+        <a href="javascript:void(0)" class="filter-close-link"><i><img src="images/applied-filter-remove.png"></i></a>
+        </div>
+        
+        <!--Applied Filter Start-->
+        <div class="applied-filter-wrapper">
+          <div>
+            <div> <span>Data Science</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+          </div>
+          <div>
+            <button>Apply</button>
+            <a class="clear-all-link" href="javascript:void(0)">Clear All</a> 
+          </div>
+        </div>
+        <!--Applied Filter Start-->
+      <div class="filterby-content">
+        <div class="filter-by-date">
+          <div class="block">
+            <label>From</label>
+            <input type="text" class="datepicker" placeholder="Enter Date" />
+          </div>
+          <div class="block">
+            <label>To</label>
+            <input type="text" class="datepicker" placeholder="Enter Date" />
+          </div>
+        </div>
+        <div class="filter-by-month-year">
+          <div class="block">
+            <label>
+              <input type="radio" name="selectdate">
+              <span class="filter-checkbox"><i><img src="images/filter-checkbox-checked.png"/></i></span>
+              <span class="filter-text">Month till date</span>
+            </label>
+          </div>
+          <div class="block">
+            <label>
+              <input type="radio" name="selectdate">
+              <span class="filter-checkbox"><i><img src="images/filter-checkbox-checked.png"/></i></span>
+              <span class="filter-text">Year till date</span>
+            </label>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <div class="heading-title">
+              <div>Institute</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">IIM Kashipur</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">IIM Lucknow</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">IIM Jammu</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">XLRI</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">MICA</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Batch</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">XLRI-PM-03-1218-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">HR-07-1018-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">SM-01-02-2018-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">PF-07-0119-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">TM-05-1218-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">LSCM-01-0219-01</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Source</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Channel</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Corporate</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Call Center</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Vendor</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Facebook</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Google</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">TBS</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Infoedge</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">iimjobs</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Taboola</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Status</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <div class="legend-info">
+                <div class="closed"><i></i>Closed</div>
+                <div class="in-progress"><i></i>In Progress</div>
+                <div class="completed"><i></i>Completed</div>
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link"><i class="in-progress-symbol"></i>Enrollment in progress</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link"><i class="closed-symbol"></i>Enrollment Closed</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link"><i class="in-progress-symbol"></i>Classes in progress</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link"><i class="closed-symbol"></i>Classes Closed</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Category</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Business Management</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Finance</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Analytics</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">HR</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Brand Sales & Marketing</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Master Course</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Data Science</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Accounting & Auditing</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Digital Marketing</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Type of course</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Self-Paced</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Centre Based</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Sales</div>
+              <span></span></div>
+            <div class="filter-options">
+              <ul class="main-menu">
+                <li> <a href="javascript:void(0)" class="main-link"><i></i>Ritika Nayak</a>
+                  <ul>
+                    <li> <a href="javascript:void(0)" class="main-sub-link"><i></i>Deepak Yadav</a>
+                      <ul>
+                        <li><a href="javascript:void(0)" class="sub-link"><i></i>Poonam Saxsena</a></li>
+                        <li><a href="javascript:void(0)" class="sub-link"><i></i>Ranjan Singh</a></li>
+                      </ul>
+                    </li>
+                    <li> <a href="javascript:void(0)" class="main-sub-link"><i></i>Kanika Yadav</a>
+                      <ul>
+                        <li><a href="javascript:void(0)" class="sub-link"><i></i>Rishi Batra</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--Left Filter Ends--> 
+  
+  <!--Right Content Start-->
+  <div class="right-wrapper"> 
+    
+    
+    <!--Dashboard Wrappper Start-->
+    <div class="dashboard-wrapper">
+      <div class="dashboard-container"> 
+        
+        <!--Main Tab Content Start-->
+        <div class="tab-content"> 
+          
+
+          <!-- Manager 1 Section Start-->
+          <div id="manager-section-1" class="tab-pane fade in active"> 
+            
+            <!-- Manager 1  Section Tab Content Start-->
+            <div class="tab-content"> 
+                
+                <div class="block-wrapper19">
+                    <div class="block-tabs-wrapper">
+                        <div class="block-title">Batch Wise</div>
+                        <div>
+                          <ul class="nav nav-tabs">
+                            <li class="first active"><a data-toggle="tab" href="#managerwise-revenue-section"><i></i>Revenue</a></li>
+                            <li class="second"><a data-toggle="tab" href="#managerwise-enrollments-section"><i></i>Enrollments</a></li>
+                          </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab-content">
+                        <div id="managerwise-revenue-section" class="tab-pane fade in active">
+                          <div class="managerwise-block-top">
+                            <ul>
+                              <li class="first">
+                                <div class="block">
+                                  <div class="title-value">34</div>
+                                  <div class="title">Total Batches</div>
+                                </div>
+                              </li>
+                              <li class="second">
+                                  <div class="block">
+                                    <div class="title-value">100 <span>54%</span></div>
+                                    <div class="progress">
+                                      <div class="progress-bar" style="width: 20%"></div>
+                                    </div>
+                                    <div class="title">Total Batches</div>
+                                </div>
+                                <div class="block">
+                                    <div class="title-value">5000</div>
+                                    <div class="title">Target</div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div id="chart4" style="min-width:100%; height: 326px;"></div>
+                        </div>
+
+                        <div id="managerwise-enrollments-section" class="tab-pane fade">
+                          <div class="managerwise-block-top">
+                            <ul>
+                              <li class="first">
+                                <div class="block">
+                                  <div class="title-value">34</div>
+                                  <div class="title">Total Batches</div>
+                                </div>
+                              </li>
+                              <li class="second">
+                                  <div class="block">
+                                    <div class="title-value">50 <span>54%</span></div>
+                                    <div class="progress">
+                                      <div class="progress-bar" style="width: 20%"></div>
+                                    </div>
+                                    <div class="title">Total Batches</div>
+                                </div>
+                                <div class="block">
+                                    <div class="title-value">5000</div>
+                                    <div class="title">Target</div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div id="chart5" style="min-width:100%; height: 326px;"></div>
+                        </div>   
+                    </div>  
+                </div>    
+                
+
+                <div class="block-wrapper20">
+                    <div class="block-tabs-wrapper">
+                        <div class="block-title">Counselor Wise</div>
+                        <div>
+                          <ul class="nav nav-tabs">
+                            <li class="first active"><a data-toggle="tab" href="#counselorwise-revenue-section"><i></i>Revenue</a></li>
+                            <li class="second"><a data-toggle="tab" href="#counselorwise-enrollments-section"><i></i>Enrollments</a></li>
+                          </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab-content">
+                        <div id="counselorwise-revenue-section" class="tab-pane fade in active">
+                          <div class="managerwise-block-top">
+                            <ul>
+                              <li class="first">
+                                <div class="block">
+                                  <div class="title-value">34</div>
+                                  <div class="title">Total Batches</div>
+                                </div>
+                              </li>
+                              <li class="second">
+                                  <div class="block">
+                                    <div class="title-value">50 <span>54%</span></div>
+                                    <div class="progress">
+                                      <div class="progress-bar" style="width: 20%"></div>
+                                    </div>
+                                    <div class="title">Total Batches</div>
+                                </div>
+                                <div class="block">
+                                    <div class="title-value">5000</div>
+                                    <div class="title">Target</div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div id="chart6" style="min-width:100%; height: 326px;"></div>
+                        </div>
+
+                        <div id="counselorwise-enrollments-section" class="tab-pane fade">
+                          <div class="managerwise-block-top">
+                            <ul>
+                              <li class="first">
+                                <div class="block">
+                                  <div class="title-value">34</div>
+                                  <div class="title">Total Batches</div>
+                                </div>
+                              </li>
+                              <li class="second">
+                                  <div class="block">
+                                    <div class="title-value">100 <span>54%</span></div>
+                                    <div class="progress">
+                                      <div class="progress-bar" style="width: 20%"></div>
+                                    </div>
+                                    <div class="title">Total Batches</div>
+                                </div>
+                                <div class="block">
+                                    <div class="title-value">5000</div>
+                                    <div class="title">Target</div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div id="chart7" style="min-width:100%; height: 326px;"></div>
+                        </div>   
+                    </div>  
+                </div>
+
+
+                <div class="block-wrapper21">
+                      <div class="left-section">
+                          <div class="chart-title">Conversion Rate</div>
+                           <div class="managerwise-venn-chart-block">
+                              <ul>
+                                <li class="first">
+                                  <div class="block">
+                                    <div class="title-value">30%</div>
+                                    <div class="title">Target</div>
+                                  </div>
+                                </li>
+                                <li class="second">
+                                    <div class="venn-chart">
+                                      <div></div>
+                                      <div></div>
+                                    </div>
+                                  <div class="block">
+                                      <div class="title-value">10%</div>
+                                      <div class="title">Actual</div>
+                                  </div>
+                                </li>
+                              </ul>
+                          </div>
+                          <div id="chart8" style="min-width:100%; height: 326px;"></div>
+                      </div>
+                      <div class="right-section">
+                          <div class="chart-title">Productivity Percentage Counselor wise</div>
+                          <div class="managerwise-venn-chart-block">
+                              <ul>
+                                <li class="first">
+                                  <div class="block">
+                                    <div class="title-value">30%</div>
+                                    <div class="title">Target</div>
+                                  </div>
+                                </li>
+                                <li class="second">
+                                    <div class="venn-chart">
+                                      <div></div>
+                                      <div></div>
+                                    </div>
+                                  <div class="block">
+                                      <div class="title-value">10%</div>
+                                      <div class="title">Actual</div>
+                                  </div>
+                                </li>
+                              </ul>
+                          </div>
+                          <div id="chart9" style="min-width:100%; height: 326px;"></div>
+                      </div>  
+                </div>
+
+
+                <div class="block-wrapper22">
+                      <div class="left-section">
+                          <div class="chart-title">Lead Volume</div>
+                          <div class="managerwise-venn-chart-block">
+                              <ul>
+                                <li class="first">
+                                  <div class="block">
+                                    <div class="title-value">30%</div>
+                                    <div class="title">Target</div>
+                                  </div>
+                                </li>
+                                <li class="second">
+                                    <div class="venn-chart">
+                                      <div></div>
+                                      <div></div>
+                                    </div>
+                                  <div class="block">
+                                      <div class="title-value">10%</div>
+                                      <div class="title">Actual</div>
+                                  </div>
+                                </li>
+                              </ul>
+                          </div>
+                          <div id="chart10" style="min-width:100%; height: 326px;"></div>
+                      </div>
+                      <div class="right-section">
+                          <div class="chart-title">Lead Quality</div>
+                          <div class="managerwise-venn-chart-block">
+                              <ul>
+                                <li class="first">
+                                  <div class="block">
+                                    <div class="title-value">30%</div>
+                                    <div class="title">Target</div>
+                                  </div>
+                                </li>
+                                <li class="second">
+                                    <div class="venn-chart">
+                                      <div></div>
+                                      <div></div>
+                                    </div>
+                                  <div class="block">
+                                      <div class="title-value">10%</div>
+                                      <div class="title">Actual</div>
+                                  </div>
+                                </li>
+                              </ul>
+                          </div>
+                          <div id="chart11" style="min-width:100%; height: 326px;"></div>
+                      </div>  
+                </div>
+
+
+                <div class="block-wrapper23">
+                      <div class="left-section">
+                          <div class="chart-title">UnAddress Leads</div>
+                          <div class="managerwise-venn-chart-block">
+                              <ul>
+                                <li class="first">
+                                  <div class="block">
+                                    <div class="title-value">30%</div>
+                                    <div class="title">Target</div>
+                                  </div>
+                                </li>
+                                <li class="second">
+                                    <div class="venn-chart">
+                                      <div></div>
+                                      <div></div>
+                                    </div>
+                                  <div class="block">
+                                      <div class="title-value">10%</div>
+                                      <div class="title">Actual</div>
+                                  </div>
+                                </li>
+                              </ul>
+                          </div>
+                          <div id="chart12" style="min-width:100%; height: 326px;"></div>
+                      </div>
+                      <div class="right-section">
+                          <div class="chart-title">Follow Ups</div>
+                          <div class="managerwise-venn-chart-block">
+                              <ul>
+                                <li class="first">
+                                  <div class="block">
+                                    <div class="title-value">30%</div>
+                                    <div class="title">Target</div>
+                                  </div>
+                                </li>
+                                <li class="second">
+                                    <div class="venn-chart">
+                                      <div></div>
+                                      <div></div>
+                                    </div>
+                                  <div class="block">
+                                      <div class="title-value">10%</div>
+                                      <div class="title">Actual</div>
+                                  </div>
+                                </li>
+                              </ul>
+                          </div>
+                          <div id="chart13" style="min-width:100%; height: 326px;"></div>
+                      </div>  
+                </div>
+
+                
+
+                <div class="block-wrapper26">
+                      <div class="left-section">
+                          <div class="chart-title">Lead Status</div>
+                          <div id="chart14" style="min-width:100%; height: 326px;"></div>
+                      </div>
+                      <div class="right-section">
+                          <div class="chart-title">Lead Ageing</div>
+                          <div id="chart15" style="min-width:100%; height: 326px;"></div>
+                      </div>  
+                </div>
+
+
+                <div class="block-wrapper24">
+                      <div class="left-section">
+                          <div class="chart-title">Refferals</div>
+                          <div class="managerwise-venn-chart-block">
+                              <ul>
+                                <li class="first">
+                                  <div class="block">
+                                    <div class="title-value">30%</div>
+                                    <div class="title">Target</div>
+                                  </div>
+                                </li>
+                                <li class="second">
+                                    <div class="venn-chart">
+                                      <div></div>
+                                      <div></div>
+                                    </div>
+                                  <div class="block">
+                                      <div class="title-value">10%</div>
+                                      <div class="title">Actual</div>
+                                  </div>
+                                </li>
+                              </ul>
+                          </div>
+                          <div id="chart16" style="min-width:100%; height: 326px;"></div>
+                      </div>
+                      <div class="right-section">
+                          <div class="chart-title">Calls Per Agent</div>
+                          <div class="managerwise-venn-chart-block">
+                              <ul>
+                                <li class="first">
+                                  <div class="block">
+                                    <div class="title-value">30%</div>
+                                    <div class="title">Target</div>
+                                  </div>
+                                </li>
+                                <li class="second">
+                                    <div class="venn-chart">
+                                      <div></div>
+                                      <div></div>
+                                    </div>
+                                  <div class="block">
+                                      <div class="title-value">10%</div>
+                                      <div class="title">Actual</div>
+                                  </div>
+                                </li>
+                              </ul>
+                          </div>
+                          <div id="chart17" style="min-width:100%; height: 326px;"></div>
+                      </div>  
+                </div>
+
+
+            
+          </div>
+          <!-- Manager 1 Section Tab Content Ends--> 
+          
+          </div>
+          <!-- Manager 1 Section Start-->
+
+
+          
+        </div>
+        <!--Main Tab Content Ends--> 
+        
+      </div>
+    </div>
+    <!--Dashboard Wrappper Ends--> 
+    
+  </div>
+  <!--Right Content Ends--> 
+  
+</div>
+<!--All  Conrent Wrapper Ends--> 
+
+
+<div class="maskbg"></div>
+
+ <script>
+         jQuery(document).ready(function(){
+         
+             jQuery('#overview-table').DataTable({
+                 "pageLength":12,
+                 "lengthChange": false,
+                 "ordering": false,
+                 "scrollX": true
+                 
+             });
+         
+             jQuery('#enrollments-table').DataTable({
+                 "pageLength":12,
+                 "lengthChange": false,
+                 "ordering": false,
+                 "scrollX": true
+             });
+         
+         
+         
+            jQuery('.filterby-content .heading-title').click(function(){
+         
+                jQuery(this).toggleClass('active');
+            });
+
+            jQuery('.mobile-filter a').click(function(){
+                jQuery('.all-content-wrapper .left-wrapper').toggleClass('open');
+                jQuery('.maskbg').toggle();
+            });
+
+
+            
+         
+             /*$(window).scroll(function() {    
+                 var scroll = $(window).scrollTop();
+         
+                  //>=, not <=
+                 if (scroll >= 1) {
+                     //filter-fixed, not filter-fixed - caps H
+                     $(".all-content-wrapper").addClass("filter-fixed");
+                 }
+             }); //missing );*/
+         
+         
+         
+         
+         
+             jQuery(window).scroll(function() {
+                 if (jQuery(this).scrollTop()) {
+                     jQuery('.back-to-top:hidden').stop(true, true).fadeIn();
+                 } else {
+                     jQuery('.back-to-top').stop(true, true).fadeOut();
+                 }
+             });
+         
+             jQuery('.back-to-top a').on('click', function(){
+                 jQuery('html, body').stop().animate({
+                     scrollTop: 0
+                 }, 500, 'linear');
+                 return false;
+         });
+         
+             jQuery('.filter-dialog-wrapper .close-link ,.filter-actions a').click(function(){
+                 jQuery('.filter-dialog-wrapper').hide();
+                 jQuery('.maskbg').hide();
+             });
+         
+         
+             jQuery('.filter-viewall-link').click(function(){
+                 jQuery('.filter-dialog-wrapper').show();
+                 jQuery('.maskbg').show();
+             });
+
+
+
+             jQuery('.filter-close-link').click(function(){
+                 jQuery('.all-content-wrapper .left-wrapper.open').removeClass('open');
+                 jQuery('.maskbg').hide();
+                 
+             });
+
+             jQuery('.header-top-area .header-right ul li.profiledd').click(function(){
+                 jQuery(this).find(".profile-dropdowndd").slideToggle("fast");
+             });
+
+            $(document).on("click", function(event){
+                var $trigger = $(".header-top-area .header-right ul li.profiledd");
+                if($trigger !== event.target && !$trigger.has(event.target).length){
+                    $(".profile-dropdowndd").slideUp("fast");
+                }            
+            });
+
+            
+         
+             
+            
+         
+         
+             jQuery('.filter-dialog-wrapper .filter-dialog-container .left-section a:not(:first)').addClass('inactive');
+             jQuery('.filter-hidden').hide();
+             jQuery('.filter-hidden:first').show();
+         
+             jQuery('.filter-dialog-wrapper .filter-dialog-container .left-section a').click(function(){
+               var t = jQuery(this).attr('id');
+               if(jQuery(this).hasClass('inactive')){ //this is the start of our condition 
+                 jQuery('.filter-dialog-wrapper .filter-dialog-container .left-section a').addClass('inactive');           
+                 jQuery(this).removeClass('inactive');
+         
+                 jQuery('.filter-hidden').hide();
+                 jQuery('#'+ t + '-filter').fadeIn('slow');
+              }
+             });
+         
+             
+                jQuery('.lead-label-checkbox'). click(function(){
+                     if(jQuery(this). prop("checked") == true){
+                         alert("Checkbox is checked." );
+                         jQuery(this).parent().parent().find('.checkbox').attr("checked",true);
+                     }
+                     else if($(this). prop("checked") == false){
+                         jQuery(this).parent().parent().find('.checkbox').attr("checked",false);
+                         alert("Checkbox is unchecked." );
+                     };
+             });
+         
+                jQuery('.Expand-link').hide();
+         
+                 jQuery('.Collapse-link').click(function(){
+                     jQuery('.qualitytable-wrapper').slideUp();
+                     jQuery('.Collapse-link').hide();
+                     //jQuery('.Expand-link').show();
+                 });
+         
+                 /* jQuery('.Expand-link').click(function(){
+                     jQuery('.Expand-link').hide();
+                     jQuery('.Collapse-link').hide();
+                     jQuery('.qualitytable-wrapper').slideUp();
+                 });*/
+         
+                 
+         
+         
+         
+            jQuery('.datepicker').datepicker({
+                 changeYear: true,
+                 changeMonth: true,
+                 showButtonPanel: true,
+                 
+         
+             });
+         
+         });
+         
+            Highcharts.setOptions({
+             colors: ['#2c324f', '#0097a7', '#DDDF00', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
+         
+         });
+            
+         
+
+         
+        
+         
+         
+         
+         
+         Highcharts.chart('chart4', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'Batch1',
+                     'Batch2',
+                     'Batch3',
+                     'Batch4',
+                     'Batch5',
+                     'Batch6',
+                     'Batch7',
+                     'Batch8',
+                     'Batch9',
+                     'Batch10',
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Revenue (lakhs)'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4,106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5,98.5]
+         
+             }]
+         });
+
+
+         Highcharts.chart('chart5', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'Batch1',
+                     'Batch2',
+                     'Batch3',
+                     'Batch4',
+                     'Batch5',
+                     'Batch6',
+                     'Batch7',
+                     'Batch8',
+                     'Batch9',
+                     'Batch10',
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Enrollments'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4,106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5,98.5]
+         
+             }]
+         });
+
+
+
+         Highcharts.chart('chart6', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'Counselor1',
+                     'Counselor2',
+                     'Counselor3',
+                     'Counselor4',
+                     'Counselor5',
+                     'Counselor6',
+                     'Counselor7',
+                     'Counselor8',
+                     'Counselor9',
+                     'Counselor10',
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Revenue (lakhs)'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4,106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5,98.5]
+         
+             }]
+         });
+
+
+         Highcharts.chart('chart7', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'Counselor1',
+                     'Counselor2',
+                     'Counselor3',
+                     'Counselor4',
+                     'Counselor5',
+                     'Counselor6',
+                     'Counselor7',
+                     'Counselor8',
+                     'Counselor9',
+                     'Counselor10',
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Enrollments'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4,106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5,98.5]
+         
+             }]
+         });
+
+
+
+         Highcharts.chart('chart8', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                     'Deepak Yadav',
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Conversion Rate (%)'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4,106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5,98.5]
+         
+             }]
+         });
+
+
+
+         Highcharts.chart('chart9', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                     'Deepak Yadav',
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Productivity (%)'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4,106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5,98.5]
+         
+             }]
+         });
+
+
+
+         Highcharts.chart('chart10', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                     'Deepak Yadav',
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Lead volume (%)'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4,106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5,98.5]
+         
+             }]
+         });
+
+
+
+         Highcharts.chart('chart11', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                     'Deepak Yadav',
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Lead Quality (%)'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4,106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5,98.5]
+         
+             }]
+         });
+
+
+         Highcharts.chart('chart12', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                     'Deepak Yadav',
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'UnAddress Leads (%)'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4,106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5,98.5]
+         
+             }]
+         });
+
+
+         Highcharts.chart('chart13', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                     'Deepak Yadav',
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Follow ups'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4,106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5,98.5]
+         
+             }]
+         });
+
+
+
+         Highcharts.chart('chart14', {
+             chart: {
+                 plotBackgroundColor: null,
+                 plotBorderWidth: null,
+                 plotShadow: false,
+                 type: 'pie',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 },
+                 options3d: {
+                    enabled: false,
+                    alpha: 45
+                }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             tooltip: {
+                 pointFormat: '{series.name}: <b>{point.y}</b>'
+             },
+             colors: ['#1a237e', '#568bdb', '#283593', '#3949ab'],    
+             
+             plotOptions: {
+                 pie: {
+                     size:'100%',
+                     innerSize:250,
+                     depth:0,
+                     allowPointSelect: true,
+                     cursor: 'pointer',
+                     dataLabels: {
+                         enabled: false,
+                         format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                         style: {
+                             color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                         }
+                     },
+                     showInLegend: true,
+                     
+                 }
+             },
+         
+             legend: {
+                    layout: 'vertical',
+                     align: 'left',
+                     verticalAlign: 'bottom',
+                     floating:false,
+                     x:0,
+                     y:0,
+                     floating: true,
+                     borderWidth: 0,
+                     
+                 },
+             series: [{
+                 name: 'Lead Status',
+                 colorByPoint: true,
+                 data: [{
+                     name: 'Follow up',
+                     y: 61,
+                     sliced: true,
+                     selected: true,
+                     myData : 10
+                 }, {
+                     name: 'Prospect',
+                     y: 11,
+                     myData : 5
+                 }, {
+                     name: 'not interested',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'Fallout',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'Cross Sell',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'next batch',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'new lead',
+                     y: 10,
+                     myData : 2
+                 }]
+             }]
+         });
+         
+
+
+         Highcharts.chart('chart15', {
+             chart: {
+                 plotBackgroundColor: null,
+                 plotBorderWidth: null,
+                 plotShadow: false,
+                 type: 'pie',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 },
+                 options3d: {
+                    enabled: false,
+                    alpha: 45
+                }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             tooltip: {
+                 pointFormat: '{series.name}: <b>{point.y}</b>'
+             },
+             colors: ['#1a237e', '#568bdb', '#283593', '#3949ab'],    
+             
+             plotOptions: {
+                 pie: {
+                     size:'100%',
+                     innerSize:250,
+                     depth:0,
+                     allowPointSelect: true,
+                     cursor: 'pointer',
+                     dataLabels: {
+                         enabled: false,
+                         format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                         style: {
+                             color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                         }
+                     },
+                     showInLegend: true,
+                     
+                 }
+             },
+         
+             legend: {
+                    layout: 'vertical',
+                     align: 'left',
+                     verticalAlign: 'bottom',
+                     floating:false,
+                     x:0,
+                     y:0,
+                     floating: true,
+                     borderWidth: 0,
+                     
+                 },
+             series: [{
+                 name: 'No of Calls Connected',
+                 colorByPoint: true,
+                 data: [{
+                     name: '0-3 times callled',
+                     y: 61,
+                     sliced: true,
+                     selected: true,
+                     myData : 10
+                 }, {
+                     name: '3-6 times callled',
+                     y: 11,
+                     myData : 5
+                 }, {
+                     name: '> 6 times callled',
+                     y: 10,
+                     myData : 2
+                 }]
+             }]
+         });
+         
+
+
+         Highcharts.chart('chart16', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                     'Deepak Yadav',
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Refferals'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79.5, 106.4,90, 79.5, 106.4,90, 79.5, 106.4,106.4]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83.6, 78.8, 98.5,83.6, 78.8, 98.5,83.6, 78.8, 98.5,98.5]
+         
+             }]
+         });
+
+
+
+         Highcharts.chart('chart17', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                      'Kanika Kathuria',
+                     'Deepak Yadav',
+                     'Rachit Vohra',
+                     'Deepak Yadav',
+             ],
+                 crosshair: true
+             },
+             yAxis: {
+                  gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Calls Per Agent'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'Target',
+                 data: [90, 79, 106,90, 79, 106,90, 79, 106,17]
+         
+             }, {
+                 name: 'Actual',
+                 data: [83, 78, 98,83, 78, 98,83, 78, 87,98]
+         
+             }]
+         });
+         
+
+
+         
+         
+         
+      </script>
+
+</body>
+</html>
