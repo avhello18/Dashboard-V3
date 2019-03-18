@@ -640,7 +640,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="view-detail-link"><a href="listing.html">Know more</a></div>
+                    <div class="view-detail-link"><a href="manager-wise.html">Know more</a></div>
                   </div>
                   <div class="block-wrapper3">
                     <div class="chart-title">
@@ -712,6 +712,91 @@
                     <div class="view-detail-link"><a href="listing.html">Know more</a></div>
                   </div>
                 </div>
+
+               <div class="block-wrapper29">
+                  <ul>
+                    <li>
+                      <div class="block-main">
+                        <div class="chart-title">
+                          <div>Calls per agents</div>
+                          <div>
+                            <label>Select Manager</label>
+                            <select>
+                              <option>Manager1</option>
+                              <option>Manager2</option>
+                              <option>Manager3</option>
+                              <option>Manager4</option>
+                              <option>Manager5</option>
+                            </select>
+                          </div>  
+                        </div>
+                        <div class="chart-block">
+                         <div id="chart40" style="min-width:100%; height: 300px;"></div>
+                      </div>
+                    </div>
+                    </li>
+                    <li>
+                      <div class="block-main">
+                        <div class="referralls-total">
+                            <ul>
+                              <li>
+                                <div>Total followups</div>
+                                <div>135</div>
+                              </li>
+                              <li>
+                                <div>Total Unaddressed Leads</div>
+                                <div>173</div>
+                              </li>
+                              <li>
+                                <div>Total Referralls</div>
+                                <div>201</div>
+                              </li>
+                            </ul>
+                        </div>
+                        <div class="chart-table-block">
+                          <table>
+                            <tr>
+                              <th>Manager Name</th>
+                              <th>Folowups</th>
+                              <th>Unaddressed Leads</th>
+                              <th>Referrals</th>
+                            </tr>
+                            <tr>
+                              <td>Kanika</td>
+                              <td>45</td>
+                              <td>61</td>
+                              <td>67</td>
+                            </tr>
+                             <tr>
+                              <td>Deepak</td>
+                              <td>45</td>
+                              <td>21</td>
+                              <td>67</td>
+                            </tr>
+                             <tr>
+                              <td>Rajat</td>
+                              <td>45</td>
+                              <td>91</td>
+                              <td>67</td>
+                            </tr>
+                          </table>
+                      </div>
+                       </div> 
+                      <div class="block-main">
+                        <div class="chart-title">
+                          <div>Statuswise Leads</div>
+                        </div>
+                        <div class="chart-block">
+                            <div id="chart41" style="min-width:100%; height:200px;"></div>
+                        </div>
+                       </div> 
+                    </li>
+                  </ul>
+                </div>        
+
+
+
+
                 <div class="block-wrapper13">
                   <div class="block-main-wrapper">
                     <div class="block-wrapper8">
@@ -3448,6 +3533,168 @@
                  name: 'Actual',
                  data: [23, 10, 34]
          
+             }]
+         });
+
+
+         Highcharts.chart('chart40', {
+             chart: {
+                 type: 'column',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             subtitle: {
+                 text: ''
+             },
+
+             colors: ['#315282', '#568bdb'],
+             xAxis: {
+                 categories: [
+                     'Agent1',
+                     'Agent2',
+                     'Agent3',
+                     'Agent4',
+                     'Agent5',
+                     'Agent6',
+                     'Agent7',
+                     'Agent8',
+                     'Agent9',
+                     'Agent10',
+                     'Agent11',
+                     'Agent12',
+                ],
+                 crosshair: true
+             },
+             yAxis: {
+                 gridLineWidth: 0,
+                 minorGridLineWidth:0,
+                 min: 0,
+                 title: {
+                     text: 'Calls Per Agent'
+                 }
+             },
+             tooltip: {
+                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                     '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                 footerFormat: '</table>',
+                 shared: true,
+                 useHTML: true
+             },
+             plotOptions: {
+                 column: {
+                     pointPadding: 0.2,
+                     borderWidth: 0
+                 }
+             },
+             series: [{
+                 name: 'No of calls',
+                 data: [28, 15, 75,28, 15, 75,28, 15, 75,28, 15, 75]
+         
+             }]
+         });
+
+
+         
+
+
+         Highcharts.chart('chart41', {
+             chart: {
+                 plotBackgroundColor: null,
+                 plotBorderWidth: null,
+                 plotShadow: false,
+                 type: 'pie',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             tooltip: {
+                 pointFormat: '{series.name}: <b>{point.y}</b>'
+             },
+             colors: ['#067180', '#0ae1ff', '#ff9a25','#157d00'],    
+             
+             plotOptions: {
+                 pie: {
+                     size:'100%',
+                     allowPointSelect: true,
+                     cursor: 'pointer',
+                     dataLabels: {
+                         enabled: false,
+                         format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                         style: {
+                             color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                         }
+                     },
+                     showInLegend: true,
+                     
+                 }
+             },
+         
+             legend: {
+                     layout: 'vertical',
+                     align: 'left',
+                     verticalAlign: 'bottom',
+                     x:-10,
+                     y:0,
+                     floating: true,
+                     borderWidth: 0,
+                     
+                 },
+             series: [{
+                 name: 'Leads',
+                 colorByPoint: true,
+                 data: [{
+                     name: 'Alive',
+                     y: 61,
+                     sliced: true,
+                     selected: true,
+                     myData : 10
+                 }, {
+                     name: 'Warm',
+                     y: 11,
+                     myData : 5
+                 }, {
+                     name: 'Duplicate',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'Recycle',
+                     y: 2,
+                     myData :2
+                 },{
+                     name: 'Dropout',
+                     y: 61,
+                     sliced: true,
+                     selected: true,
+                     myData : 10
+                 }, {
+                     name: 'Dead',
+                     y: 11,
+                     myData : 5
+                 }, {
+                     name: 'Converted',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'Wrapout',
+                     y: 2,
+                     myData :2
+                 }]
              }]
          });
          
