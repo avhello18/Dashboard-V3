@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>Agent Wise Business Dashboard</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+<link href="css/dashboard.css" rel="stylesheet" type="text/css">
+<link href = "css/jquery-ui.css" rel = "stylesheet">
+<link href="css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src = "js/jquery-ui.js"></script>
+</head>
+<body>
+
+<div class="mobile-filter"><a href="javascript:void(0)"><img src="images/filter-icon.png"/></a></div>
+
+<!-- Back to top Start-->
+<div id="back-to-top" class="back-to-top"> <a href="javascript:void(0)"> <img src="images/back-to-top.png"/> </a> </div>
+<!-- Back to top Ends--> 
+
+<!--Header Top Bar Start-->
+<div class="header-advance-area">
+  <div class="header-top-area"> <a href="index.html" class="main-link"><img src="images/logo.png" alt=""></a>
+    <div class="header-title">
+      <!--Top Tabs Start-->
+      <div class="tabs-wrapper">
+        <ul class="nav nav-tabs">
+          <li class="first active"><a data-toggle="tab" href="#agent-section-1">Agent wise</a></li>
+        </ul>
+        <div class="mob-view-all-filter"><a href="#"><i></i>view all filters</a></div>
+      </div>
+      <!--Top Tabs Ends--> 
+    
+    </div>
+    <div class="header-right">
+      <ul>
+        <li class="profiledd"> <a href="javascript:void(0)">
+            <img src="images/profile.jpg"/><span>Aastha Verma <i><img src="images/actiondd-arrow.png"></i></span></a> 
+            <div class="profile-dropdowndd">
+              <ul>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--Header Top Bar Ends--> 
+
+<!--All  Conrent Wrapper Start-->
+<div class="all-content-wrapper"> 
+  
+  <div class="bg"></div>
+
+  <!--Left Filter Start-->
+  <div class="left-wrapper">
+    <!-- <div class="loading-loader"><img src="images/loading.gif"/></div> -->
+    <div class="filterby-wrapper">
+      <div class="filterby-title">
+        <div>Filter by</div>
+        <!-- <a class="filter-viewall-link" href="javascript:void(0)">View all</a> -->
+        <a href="javascript:void(0)" class="filter-close-link"><i><img src="images/applied-filter-remove.png"></i></a>
+        </div>
+        
+        <!--Applied Filter Start-->
+        <div class="applied-filter-wrapper">
+          <div>
+            <div> <span>Data Science</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+          </div>
+          <div>
+            <button>Apply</button>
+            <a class="clear-all-link" href="javascript:void(0)">Clear All</a> 
+          </div>
+        </div>
+        <!--Applied Filter Start-->
+      <div class="filterby-content">
+        <div class="filter-by-date">
+          <div class="block">
+            <label>From</label>
+            <input type="text" class="datepicker" placeholder="Enter Date" />
+          </div>
+          <div class="block">
+            <label>To</label>
+            <input type="text" class="datepicker" placeholder="Enter Date" />
+          </div>
+        </div>
+        <div class="filter-by-month-year">
+          <div class="block">
+            <label>
+              <input type="radio" name="selectdate">
+              <span class="filter-checkbox"><i><img src="images/filter-checkbox-checked.png"/></i></span>
+              <span class="filter-text">Month till date</span>
+            </label>
+          </div>
+          <div class="block">
+            <label>
+              <input type="radio" name="selectdate">
+              <span class="filter-checkbox"><i><img src="images/filter-checkbox-checked.png"/></i></span>
+              <span class="filter-text">Year till date</span>
+            </label>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <div class="heading-title">
+              <div>Institute</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">IIM Kashipur</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">IIM Lucknow</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">IIM Jammu</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">XLRI</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">MICA</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Batch</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">XLRI-PM-03-1218-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">HR-07-1018-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">SM-01-02-2018-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">PF-07-0119-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">TM-05-1218-01</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">LSCM-01-0219-01</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Source</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Channel</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Corporate</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Call Center</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Vendor</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Facebook</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Google</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">TBS</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Infoedge</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">iimjobs</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Taboola</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Status</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <div class="legend-info">
+                <div class="closed"><i></i>Closed</div>
+                <div class="in-progress"><i></i>In Progress</div>
+                <div class="completed"><i></i>Completed</div>
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link"><i class="in-progress-symbol"></i>Enrollment in progress</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link"><i class="closed-symbol"></i>Enrollment Closed</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link"><i class="in-progress-symbol"></i>Classes in progress</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link"><i class="closed-symbol"></i>Classes Closed</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Category</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Business Management</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Finance</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Analytics</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">HR</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Brand Sales & Marketing</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Master Course</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Data Science</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Accounting & Auditing</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Digital Marketing</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Type of course</div>
+              <span></span></div>
+            <div class="filter-options">
+              <div class="filter-search">
+                <input type="search" placeholder="Search here" />
+              </div>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Self-Paced</span> </label>
+              <label class="filter-label">
+                <input type="checkbox">
+                <span class="filter-checkbox"></span> <span class="filter-link">Centre Based</span> </label>
+              <div class="show-more-filter"><a href="#">10 more</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="heading-title">
+              <div>Sales</div>
+              <span></span></div>
+            <div class="filter-options">
+              <ul class="main-menu">
+                <li> <a href="javascript:void(0)" class="main-link"><i></i>Ritika Nayak</a>
+                  <ul>
+                    <li> <a href="javascript:void(0)" class="main-sub-link"><i></i>Deepak Yadav</a>
+                      <ul>
+                        <li><a href="javascript:void(0)" class="sub-link"><i></i>Poonam Saxsena</a></li>
+                        <li><a href="javascript:void(0)" class="sub-link"><i></i>Ranjan Singh</a></li>
+                      </ul>
+                    </li>
+                    <li> <a href="javascript:void(0)" class="main-sub-link"><i></i>Kanika Yadav</a>
+                      <ul>
+                        <li><a href="javascript:void(0)" class="sub-link"><i></i>Rishi Batra</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--Left Filter Ends--> 
+  
+  <!--Right Content Start-->
+  <div class="right-wrapper"> 
+    
+    
+    <!--Dashboard Wrappper Start-->
+    <div class="dashboard-wrapper">
+      <div class="dashboard-container"> 
+        
+        <!--Main Tab Content Start-->
+        <div class="tab-content"> 
+
+           <!-- Agent Wise Section Start-->
+          <div id="agent-section-1" class="tab-pane fade in active"> 
+
+            <div class="tab-content"> 
+
+                <div class="block-wrapper30">
+                      <div class="chart-title">
+                          <div>Agent Wise</div>
+                          <div>
+                            <label>Sort By</label>
+                            <select>
+                              <option>Agent Name</option>
+                              <option>Agent Name</option>
+                              <option>Agent Name</option>
+                              <option>Agent Name</option>
+                              <option>Agent Name</option>
+                              <option>Agent Name</option>
+                              <option>Agent Name</option>
+                            </select>
+                          </div>
+                      </div>
+
+                    <div class="block-wrapper31">
+                      <div class="left-section">
+                        <div class="chart-title">Revenue</div>
+                        <div class="block-table-block">
+                          <table>
+                            <thead>
+                            <tr>
+                              <th>Agent Name</th>
+                              <th>Target</th>
+                              <th>Actual</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Agent Name 1</td>
+                              <td>1000</td>
+                              <td>200</td>
+                            </tr>
+                            <tr>
+                              <td>Agent Name 2</td>
+                              <td>1000</td>
+                              <td>200</td>
+                            </tr>
+                            <tr>
+                              <td>Agent Name 3</td>
+                              <td>1000</td>
+                              <td>200</td>
+                            </tr>
+                             </tbody>
+                          </table>
+
+                        </div>
+
+                      </div>
+                      <div class="right-section">
+                        <div class="chart-title">Enrollments</div>
+                        <div class="block-table-block">
+                          <table>
+                            <thead>
+                            <tr>
+                              <th>Agent Name</th>
+                              <th>Target</th>
+                              <th>Actual</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Agent Name 1</td>
+                              <td>1000</td>
+                              <td>200</td>
+                            </tr>
+                            <tr>
+                              <td>Agent Name 2</td>
+                              <td>1000</td>
+                              <td>200</td>
+                            </tr>
+                            <tr>
+                              <td>Agent Name 3</td>
+                              <td>1000</td>
+                              <td>200</td>
+                            </tr>
+                             </tbody>
+                          </table>
+
+                        </div>
+                      </div>
+
+                    </div>  
+
+
+                    <div class="block-wrapper31">
+                      <div class="left-section">
+                        <div class="chart-title">Conversion Rate</div>
+                        <div class="block-table-block">
+                         <table>
+                            <thead>
+                            <tr>
+                              <th>Agent Name</th>
+                              <th>Target</th>
+                              <th>Actual</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Agent Name 1</td>
+                              <td>1000</td>
+                              <td>200</td>
+                            </tr>
+                            <tr>
+                              <td>Agent Name 2</td>
+                              <td>1000</td>
+                              <td>200</td>
+                            </tr>
+                            <tr>
+                              <td>Agent Name 3</td>
+                              <td>1000</td>
+                              <td>200</td>
+                            </tr>
+                             </tbody>
+                          </table>
+
+                        </div>
+
+                      </div>
+                      <div class="right-section">
+                        <div class="chart-title">Productivity</div>
+                        <div class="block-table-block">
+                         <table>
+                            <thead>
+                            <tr>
+                              <th>Agent Name</th>
+                              <th>Target</th>
+                              <th>Actual</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Agent Name 1</td>
+                              <td>1000</td>
+                              <td>200</td>
+                            </tr>
+                            <tr>
+                              <td>Agent Name 2</td>
+                              <td>1000</td>
+                              <td>200</td>
+                            </tr>
+                            <tr>
+                              <td>Agent Name 3</td>
+                              <td>1000</td>
+                              <td>200</td>
+                            </tr>
+                             </tbody>
+                          </table>
+
+                        </div>
+                      </div>
+
+                    </div>  
+
+
+
+
+                       
+                </div>
+
+
+            </div>  
+
+          </div>  
+           <!-- Agent Wise Section Ends-->
+          
+
+
+          
+        </div>
+        <!--Main Tab Content Ends--> 
+        
+      </div>
+    </div>
+    <!--Dashboard Wrappper Ends--> 
+    
+  </div>
+  <!--Right Content Ends--> 
+  
+</div>
+<!--All  Conrent Wrapper Ends--> 
+
+
+<div class="maskbg"></div>
+
+ <script>
+         jQuery(document).ready(function(){
+         
+             jQuery('#overview-table').DataTable({
+                 "pageLength":12,
+                 "lengthChange": false,
+                 "ordering": false,
+                 "scrollX": true
+                 
+             });
+         
+             jQuery('#enrollments-table').DataTable({
+                 "pageLength":12,
+                 "lengthChange": false,
+                 "ordering": false,
+                 "scrollX": true
+             });
+         
+         
+         
+            jQuery('.filterby-content .heading-title').click(function(){
+         
+                jQuery(this).toggleClass('active');
+            });
+
+            jQuery('.mobile-filter a').click(function(){
+                jQuery('.all-content-wrapper .left-wrapper').toggleClass('open');
+                jQuery('.maskbg').toggle();
+            });
+
+
+            
+         
+             /*$(window).scroll(function() {    
+                 var scroll = $(window).scrollTop();
+         
+                  //>=, not <=
+                 if (scroll >= 1) {
+                     //filter-fixed, not filter-fixed - caps H
+                     $(".all-content-wrapper").addClass("filter-fixed");
+                 }
+             }); //missing );*/
+         
+         
+         
+         
+         
+             jQuery(window).scroll(function() {
+                 if (jQuery(this).scrollTop()) {
+                     jQuery('.back-to-top:hidden').stop(true, true).fadeIn();
+                 } else {
+                     jQuery('.back-to-top').stop(true, true).fadeOut();
+                 }
+             });
+         
+             jQuery('.back-to-top a').on('click', function(){
+                 jQuery('html, body').stop().animate({
+                     scrollTop: 0
+                 }, 500, 'linear');
+                 return false;
+         });
+         
+             jQuery('.filter-dialog-wrapper .close-link ,.filter-actions a').click(function(){
+                 jQuery('.filter-dialog-wrapper').hide();
+                 jQuery('.maskbg').hide();
+             });
+         
+         
+             jQuery('.filter-viewall-link').click(function(){
+                 jQuery('.filter-dialog-wrapper').show();
+                 jQuery('.maskbg').show();
+             });
+
+
+
+             jQuery('.filter-close-link').click(function(){
+                 jQuery('.all-content-wrapper .left-wrapper.open').removeClass('open');
+                 jQuery('.maskbg').hide();
+                 
+             });
+
+             jQuery('.header-top-area .header-right ul li.profiledd').click(function(){
+                 jQuery(this).find(".profile-dropdowndd").slideToggle("fast");
+             });
+
+            $(document).on("click", function(event){
+                var $trigger = $(".header-top-area .header-right ul li.profiledd");
+                if($trigger !== event.target && !$trigger.has(event.target).length){
+                    $(".profile-dropdowndd").slideUp("fast");
+                }            
+            });
+
+            
+         
+             
+            
+         
+         
+             jQuery('.filter-dialog-wrapper .filter-dialog-container .left-section a:not(:first)').addClass('inactive');
+             jQuery('.filter-hidden').hide();
+             jQuery('.filter-hidden:first').show();
+         
+             jQuery('.filter-dialog-wrapper .filter-dialog-container .left-section a').click(function(){
+               var t = jQuery(this).attr('id');
+               if(jQuery(this).hasClass('inactive')){ //this is the start of our condition 
+                 jQuery('.filter-dialog-wrapper .filter-dialog-container .left-section a').addClass('inactive');           
+                 jQuery(this).removeClass('inactive');
+         
+                 jQuery('.filter-hidden').hide();
+                 jQuery('#'+ t + '-filter').fadeIn('slow');
+              }
+             });
+         
+             
+                jQuery('.lead-label-checkbox'). click(function(){
+                     if(jQuery(this). prop("checked") == true){
+                         alert("Checkbox is checked." );
+                         jQuery(this).parent().parent().find('.checkbox').attr("checked",true);
+                     }
+                     else if($(this). prop("checked") == false){
+                         jQuery(this).parent().parent().find('.checkbox').attr("checked",false);
+                         alert("Checkbox is unchecked." );
+                     };
+             });
+         
+                jQuery('.Expand-link').hide();
+         
+                 jQuery('.Collapse-link').click(function(){
+                     jQuery('.qualitytable-wrapper').slideUp();
+                     jQuery('.Collapse-link').hide();
+                     //jQuery('.Expand-link').show();
+                 });
+         
+                 /* jQuery('.Expand-link').click(function(){
+                     jQuery('.Expand-link').hide();
+                     jQuery('.Collapse-link').hide();
+                     jQuery('.qualitytable-wrapper').slideUp();
+                 });*/
+         
+                 
+         
+         
+         
+            jQuery('.datepicker').datepicker({
+                 changeYear: true,
+                 changeMonth: true,
+                 showButtonPanel: true,
+                 
+         
+             });
+
+
+            jQuery('table').DataTable();
+           
+         
+         });
+         
+         </script>
+
+</body>
+</html>
