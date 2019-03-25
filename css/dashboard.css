@@ -1263,6 +1263,13 @@ body {
 .dashboard-wrapper .dashboard-container .managerwise-venn-chart-block ul li .venn-chart div:last-child{ background-color:rgba(151,185,225,0.7); margin-left: -15%; min-width:60px; min-height: 60px; border-radius:50%; }
 
 
+.dashboard-wrapper .dashboard-container .managerwise-wrapper{ display: flex; flex-direction: column; box-shadow: 0 1px 3px rgba(33,33,33,.5); background-color: #fff; border-radius: 5px; border: 1px solid #e7e7e7; padding: 20px;}
+.dashboard-wrapper .dashboard-container .managerwise-wrapper .chart-title {font-size: 14px; color: #4d4d4d; justify-content: space-between; display: flex; align-items: center; text-transform: uppercase; font-family: 'sourcesanssemibold'; margin-bottom:25px;}
+.dashboard-wrapper .dashboard-container .managerwise-wrapper .chart-title select{font-size: 12px; border: 1px solid #ebebeb; border-radius: 5px; background-color: #ededf2; padding: 5px 10px; font-family:sourcesans;}
+.dashboard-wrapper .dashboard-container .managerwise-wrapper .chart-title select:focus{outline: 0px none;}
+.dashboard-wrapper .dashboard-container .managerwise-wrapper .chart-title label{font-weight: normal; text-transform: capitalize; margin-right: 5px; font-family: 'sourcesans';}
+
+
 .dashboard-wrapper .dashboard-container .block-wrapper19{display: flex; flex-direction: column; width: 100%; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(33,33,33,.5); background-color: #fff; border-radius: 5px; border: 1px solid #e7e7e7; padding: 20px;}
 .dashboard-wrapper .dashboard-container .block-wrapper19 .block-tabs-wrapper{ align-items: center; justify-content: space-between; margin-bottom: 20px;}
 .dashboard-wrapper .dashboard-container .block-wrapper19 .block-tabs-wrapper .block-title{margin-bottom: 0;}
@@ -1291,7 +1298,7 @@ body {
 .dashboard-wrapper .dashboard-container .block-wrapper23 .right-section{display: flex; flex-direction: column; margin-left: 20px; width: 50%; box-shadow: 0 1px 3px rgba(33,33,33,.5); background-color: #fff; border-radius: 5px; border: 1px solid #e7e7e7; padding: 20px;}
 .dashboard-wrapper .dashboard-container .block-wrapper23 .chart-title { text-transform: uppercase; font-family: 'sourcesanssemibold'; font-size: 14px; color: #4d4d4d;  margin-bottom: 20px;}
 
-.dashboard-wrapper .dashboard-container .block-wrapper24{display: flex; width: 100%; margin-bottom: 20px;}
+.dashboard-wrapper .dashboard-container .block-wrapper24{display: flex; width: 100%; margin-bottom: 0px;}
 .dashboard-wrapper .dashboard-container .block-wrapper24 .left-section{display: flex; flex-direction: column; width: 50%; box-shadow: 0 1px 3px rgba(33,33,33,.5); background-color: #fff; border-radius: 5px; border: 1px solid #e7e7e7; padding: 20px;}
 .dashboard-wrapper .dashboard-container .block-wrapper24 .right-section{display: flex; flex-direction: column; margin-left: 20px; width: 50%; box-shadow: 0 1px 3px rgba(33,33,33,.5); background-color: #fff; border-radius: 5px; border: 1px solid #e7e7e7; padding: 20px;}
 .dashboard-wrapper .dashboard-container .block-wrapper24 .chart-title { text-transform: uppercase; font-family: 'sourcesanssemibold'; font-size: 14px; color: #4d4d4d;  margin-bottom: 20px;}
