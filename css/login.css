@@ -24,7 +24,7 @@ body {
 *{margin:0; padding:0; line-height: normal; box-sizing:border-box; }
 
 /*Login  Css*/
-.login-wrapper{ position:fixed; width:920px; height:auto; top:50%; left:50%; transform: translate(-50%, -50%); z-index:220000; }
+.login-wrapper{ position:fixed; width:65%; height:auto; top:50%; left:50%; transform: translate(-50%, -50%); z-index:220000; }
 .login-wrapper .login-container{ display:flex; background-color: #f2f2f2; padding:0px; position: relative;  background-color: #f9f9f9; box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12);
     border-radius:0px;}
 .login-wrapper .login-container .left-section{width: 55%; padding-top:70px;  display: flex; justify-content: center; align-items:flex-start; background-color: #838aad; background-image:url(../images/login-bg.png); background-repeat:no-repeat; background-position: center bottom; }    
@@ -50,3 +50,12 @@ body {
 .login-wrapper .login-container .right-section .remember-block label input:checked + span i{background-color:#666;}
 .login-wrapper .login-container .right-section .poweredby{margin-top:50px; display: flex; align-items: center; justify-content: center; width: 100%;}
 /*Login Css*/
+
+
+@media only screen and (max-width: 900px) {
+
+.login-wrapper .login-container{flex-direction: column;}
+.login-wrapper .login-container .left-section{display: none;}
+.login-wrapper .login-container .right-section{width: 100%;}
+.login-wrapper .login-container .right-section .form-wrapper{padding:20px;}
+}
