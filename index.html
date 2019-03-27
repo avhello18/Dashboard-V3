@@ -858,7 +858,21 @@
                     </div>
                   </div>
                   <div class="qualitytable-wrapper">
-                    <table>
+                    <div class="chart-title">
+                          <div>Category wise performance Trend</div>
+                          <div>
+                            <label>Select Manager</label>
+                            <select>
+                              <option>Manager1</option>
+                              <option>Manager2</option>
+                              <option>Manager3</option>
+                              <option>Manager4</option>
+                              <option>Manager5</option>
+                            </select>
+                          </div>  
+                        </div>
+                    <div class="block-table">
+                        <table>
                       <tr>
                         <th>counsellor name</th>
                         <th>audit count</th>
@@ -913,7 +927,8 @@
                         <td></td>
                         <td></td>
                       </tr>
-                    </table>
+                        </table>
+                    </div>
                   </div>
                   <div class="expand-collapse"> <a href="javascript:void(0)" class="Collapse-link">Collapse</a> <a href="javascript:void(0)" class="Expand-link">Expand</a> </div>
                 </div>
@@ -3282,8 +3297,8 @@
                                  if(this.colorIndex == 1){
                                   //alert('Category: ' + this.category + ', value: ' + this.y);  
                                   //this.update({ color: '#fe5800' }, true, false);
-                                     jQuery('.qualitytable-wrapper').slideDown();
-                                     jQuery('.Collapse-link').show(); 
+                                     //jQuery('.qualitytable-wrapper').slideDown();
+                                     //jQuery('.Collapse-link').show(); 
                                  }
                                  
                              },
