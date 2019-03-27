@@ -1601,3 +1601,96 @@ body {
 
 }  
 /*Media Css*/
+
+
+
+
+.sidebar_loader{
+    height: 600px;
+    width: 345px;
+    left: 25px;
+    top: 25px;
+    padding-top: 300px;
+    text-align: center;
+    background-color: #dddddd5e;
+}
+.filter-submit-div{
+    text-align: center;
+}
+.filter-submit-btn{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 4px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    width: 30%;
+    user-select: none;
+}
+.msg-modal{
+    position: fixed;
+    top: 40%;
+    right: 0;
+    bottom: 0;
+    left: 40%;
+    z-index: 2200003;
+    display: block;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    opacity: 1;
+    background-color: #f5f2f2e3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.79);
+    width: 25%;
+    height: 25%
+}
+#close-msg-modal{
+    position: absolute;
+    cursor: pointer;
+    top: opx;
+    right: 0px;
+}
+.msg-modal p{
+    padding: 10% 0% 0% 5%;
+}
+.fin_heading {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+.fin_heading div {
+    margin-right:5%;
+}
+.fin_heading span{
+    font-size: 13px;
+    color: #fff;
+    padding: 2px 5px;
+    margin-left: 10px;
+    font-family: 'sourcesans';
+    background-color: #6ca2fb;
+}
+.loading-wrapper{position:fixed; background-color: rgba(0,0,0,0.6); top:0; right:0; bottom: 0; left:0; z-index: 2200002}
+.loading-wrapper .loading-loader {position:absolute; top:100px; left:50%; margin-left: -25px; z-index: 2200001}
+.listing-wrapper  .listing-container .listing-table-wrapper table td .Planned{font-size: 12px; color: #fff; white-space: nowrap; background-color: #e8743b; padding:3px 10px; border-radius: 5px; }
+.listing-wrapper  .listing-container .listing-table-wrapper table td .Batch-Closed{font-size: 12px; color: #fff; white-space: nowrap; background-color: #6c8893; padding:3px 10px; border-radius: 5px; }
+.listing-wrapper  .listing-container .listing-table-wrapper table td .Enrolment-Closed{font-size: 12px; color: #fff; white-space: nowrap; background-color: #ee6868; padding:3px 10px; border-radius: 5px; }
+.listing-wrapper  .listing-container .listing-table-wrapper table td .Classes-In-Progress{font-size: 12px; color: #fff; white-space: nowrap; background-color: #525df4; padding:3px 10px; border-radius: 5px; }
+.listing-wrapper  .listing-container .listing-table-wrapper table td .Enrolment-in-Progress{font-size: 12px; color: #fff; white-space: nowrap; background-color: #ee6868; padding:3px 10px; border-radius: 5px; }
+.listing-wrapper  .listing-container .listing-table-wrapper table td .Completed{font-size: 12px; color: #fff; white-space: nowrap; background-color: #945ecf; padding:3px 10px; border-radius: 5px; }
