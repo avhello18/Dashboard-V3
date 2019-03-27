@@ -48,8 +48,8 @@ body {
 
 /*Tabs Css*/
 
-.tabs-wrapper{display:flex; padding: 0px 0px 0; margin: 0 0px; border-bottom:0px solid #ebebeb;}
-.tabs-wrapper ul{display:flex; width: 100%; margin:0; padding:0;}
+.tabs-wrapper{display:flex; padding: 0px 0px 0; margin: 0 0px; align-items: center; width: 100%; border-bottom:0px solid #ebebeb;}
+.tabs-wrapper ul{display:flex; width: 100%; margin:0; padding:0; align-items: center; justify-content: center;}
 .tabs-wrapper ul li{display:flex; width: auto; margin:0 0 0 25px; padding:0; list-style-type: none;}
 .tabs-wrapper ul li:first-child{margin-left: 0;}
 .tabs-wrapper ul li a{justify-content: center; padding:0px 15px 7px 15px; text-align: center;  font-size:16px; color:#fff; font-family:sourcesans; text-decoration: none; width: 100%; position: relative; display: flex; align-items: center; text-overflow: ellipsis; white-space: nowrap; border-bottom:3px solid transparent;}
@@ -243,13 +243,28 @@ body {
 .header-top-area .header-right{display: flex; align-items: center;}
 .header-top-area .header-right ul>li>a>img {width: 26px;border-radius: 50%; margin-right: 5px}
 .header-top-area .header-right ul{margin:0; padding:0; display: flex; align-items: center;}
-.header-top-area .header-right ul li{margin:0; padding:0; width: 100%; list-style-type: none; position: relative; display: flex; align-items: center;}
+.header-top-area .header-right ul li{margin:0 0 0 35px; padding:0; width:auto; list-style-type: none; position: relative; display: flex; align-items: center;}
+.header-top-area .header-right ul li:first-child{margin-left: 0;}
 .header-top-area .header-right ul li a{margin:0; padding:0; text-decoration: none; color:#fff; display: flex; align-items: center;}
 .header-top-area .header-right ul li a i{margin-left:3px;}
 .header-top-area .header-right ul li.open .profile-dropdowndd{display: block;}
 .header-top-area .header-right ul li .profile-dropdowndd{position: absolute; display: none; top:100%;right:0; left:0; width: 100%; padding: 5px;  z-index: 220001; background-color: #fff; border-radius:4px; box-shadow: 0 6px 12px rgba(0,0,0,.175); border: 1px solid #ccc;}
+.header-top-area .header-right ul li .profile-dropdowndd li{width: 100%}
 .header-top-area .header-right ul li .profile-dropdowndd li a {width: 100%; display: flex; padding: 3px 20px; color: #333;white-space: nowrap;}
 .header-top-area .header-right ul li .profile-dropdowndd li a:hover{background-color: #f5f5f5; color:#262626;}
+
+.header-top-area .header-right ul li.open .notification-dropdowndd{display: block;}
+.header-top-area .header-right ul li .notification-dropdowndd{display:none; position: absolute; flex-direction: column; top:100%;right:0; left:auto; width:250px; padding: 5px;  z-index: 220001; background-color: #fff; border-radius:4px; box-shadow: 0 6px 12px rgba(0,0,0,.175); border: 1px solid #ccc;}
+.header-top-area .header-right ul li .notification-dropdowndd ul{display: flex; flex-direction: column; align-items: flex-start;}
+.header-top-area .header-right ul li .notification-dropdowndd ul li{display: flex; flex-direction: column; align-items: flex-start; margin:5px 0 0; width: 100%;}
+.header-top-area .header-right ul li .notification-dropdowndd li a {width: 100%; display: flex; padding: 3px 20px; color: #333;white-space: nowrap;}
+.header-top-area .header-right ul li .notification-dropdowndd li a:hover{background-color: #f5f5f5; color:#262626;}
+.header-top-area .header-right ul li.notificationdd .badge {position: absolute; top: -11px; right: -9px; font-size: 13px; padding:0px 5px; border-radius: 50%; background-color:#fff; color: #456fac;}
+.header-top-area .header-right ul li.notificationdd span{display: flex; align-items: center;}
+.header-top-area .header-right ul li .notification-dropdowndd .title{display: flex; font-family: latobold; padding-bottom: 5px; align-items: center; justify-content: center; border-bottom:1px solid #ddd;}
+.header-top-area .header-right ul li .notification-dropdowndd  .more-link{display: flex; padding:5px 10px; align-items: flex-end; justify-content: flex-end;}
+.header-top-area .header-right ul li .notification-dropdowndd  .more-link a{color:#6ca2fb; text-decoration: underline;}
+.header-top-area .header-right ul li .notification-dropdowndd  .more-link a:hover{color:#6ca2fb; text-decoration: none;}
 /*Header Css*/
 
 
@@ -1389,7 +1404,7 @@ body {
 .header-top-area .main-link{ margin-top: 5px; }
 .all-content-wrapper{padding-top: 120px; padding-right: 20px;}
 .sales-tabs-wrapper{width: 314px; margin-left: -157px;}
-
+.tabs-wrapper{margin-top: 10px;}
 .dashboard-wrapper .dashboard-container .block-wrapper1{flex-direction: column;}
 .dashboard-wrapper .dashboard-container .block-wrapper1 .block-right{width:100%; margin-left: 0; order: 1; margin-bottom: 20px;}
 .dashboard-wrapper .dashboard-container .block-wrapper1 .block-right-last ul{flex-direction: column;}
