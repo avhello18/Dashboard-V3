@@ -44,7 +44,26 @@
     </div>
     <div class="header-right">
       <ul>
-        <li class="profiledd"> <a href="javascript:void(0)">
+        <li class="notificationdd">
+          <a href="javascript:void(0);">
+              <span><img src="images/notification-bell.png"/></span>
+              <span class="badge">3</span>  
+          </a>
+          <div class="notification-dropdowndd">
+              <div class="title">Notifications</div>
+              <ul>
+                <li><a href="#">Content here</a></li>
+                <li><a href="#">Content here</a></li>
+                <li><a href="#">Content here</a></li>
+                <li><a href="#">Content here</a></li>
+                <li><a href="#">Content here</a></li>
+                <li><a href="#">Content here</a></li>
+                <li><a href="#">Content here</a></li>
+              </ul>
+              <div class="more-link"><a href="#">See More</a></div>
+            </div>
+        </li>
+        <li class="profiledd"> <a href="javascript:void(0);">
             <img src="images/profile.jpg"/><span>Aastha Verma <i><img src="images/actiondd-arrow.png"></i></span></a> 
             <div class="profile-dropdowndd">
               <ul>
@@ -1734,12 +1753,18 @@
                  jQuery(this).find(".profile-dropdowndd").slideToggle("fast");
              });
 
+             jQuery('.header-top-area .header-right ul li.notificationdd').click(function(){
+                 jQuery(this).find(".notification-dropdowndd").slideToggle("fast");
+             });
+
             $(document).on("click", function(event){
-                var $trigger = $(".header-top-area .header-right ul li.profiledd");
+                var $trigger = $(".header-top-area .header-right ul li.profiledd ,.header-top-area .header-right ul li.notificationdd");
                 if($trigger !== event.target && !$trigger.has(event.target).length){
-                    $(".profile-dropdowndd").slideUp("fast");
+                    $(".profile-dropdowndd ,.notification-dropdowndd").slideUp("fast");
                 }            
             });
+
+
 
             
          
