@@ -633,7 +633,13 @@ body {
 .dashboard-wrapper .dashboard-container .block-wrapper8 .chart-title .tabs a.selected{color:#303030; text-decoration:none; border-left:1px solid #e7e7e7; padding-left: 10px; margin-left: 10px;}
 .dashboard-wrapper .dashboard-container .block-wrapper8 .chart-title .tabs a:first-child{border-left:0px solid #e7e7e7; padding-left:0px; margin-left: 0px;}
 .dashboard-wrapper .dashboard-container .block-wrapper8 .tabs-block{display: flex; width: 100%; flex-direction: column;}
-.dashboard-wrapper .dashboard-container .qualitytable-wrapper{ display: flex; display: none; width: 100%; background-color: #fff; box-shadow: 0 1px 13px rgba(33,33,33,.6); border-radius: 5px; padding:20px; margin-top: 30px;}
+.dashboard-wrapper .dashboard-container .qualitytable-wrapper{ display: flex; flex-direction: column; width: 100%; background-color: #fff; box-shadow: 0 1px 13px rgba(33,33,33,.6); border-radius: 5px; padding:20px; margin-top: 30px;}
+.dashboard-wrapper .dashboard-container .qualitytable-wrapper .block-table{overflow: auto;}
+.dashboard-wrapper .dashboard-container .qualitytable-wrapper .chart-title {font-size: 14px; color: #4d4d4d; justify-content: space-between; display: flex; align-items: center; text-transform: uppercase; font-family: 'sourcesanssemibold'; margin-bottom:25px;}
+.dashboard-wrapper .dashboard-container .qualitytable-wrapper .chart-title select{font-size: 12px; border: 1px solid #ebebeb; border-radius: 5px; background-color: #ededf2; padding: 5px 10px; font-family:sourcesans;}
+.dashboard-wrapper .dashboard-container .qualitytable-wrapper .chart-title select:focus{outline: 0px none;}
+.dashboard-wrapper .dashboard-container .qualitytable-wrapper .chart-title label{font-weight: normal; text-transform: capitalize; margin-right: 5px; font-family: 'sourcesans';}
+
 .dashboard-wrapper .dashboard-container .qualitytable-wrapper table{width: 100%; border-collapse: collapse; border:0px solid #ddd;}
 .dashboard-wrapper .dashboard-container .qualitytable-wrapper th{text-transform: uppercase; padding:10px; text-align: left;  color:#4d4d4d; font-size:12px; font-family: 'sourcesanssemibold'; }
 .dashboard-wrapper .dashboard-container .qualitytable-wrapper td{text-transform: uppercase; padding:10px; color:#4d4d4d;  font-size:12px; font-family: 'sourcesans'; }
