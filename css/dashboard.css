@@ -1604,7 +1604,7 @@ body {
 
 
 
-
+/*Css Added By Anup Sir*/
 .sidebar_loader{
     height: 600px;
     width: 345px;
@@ -1694,3 +1694,4 @@ body {
 .listing-wrapper  .listing-container .listing-table-wrapper table td .Classes-In-Progress{font-size: 12px; color: #fff; white-space: nowrap; background-color: #525df4; padding:3px 10px; border-radius: 5px; }
 .listing-wrapper  .listing-container .listing-table-wrapper table td .Enrolment-in-Progress{font-size: 12px; color: #fff; white-space: nowrap; background-color: #ee6868; padding:3px 10px; border-radius: 5px; }
 .listing-wrapper  .listing-container .listing-table-wrapper table td .Completed{font-size: 12px; color: #fff; white-space: nowrap; background-color: #945ecf; padding:3px 10px; border-radius: 5px; }
+/*Css Added By Anup Sir*/
