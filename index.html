@@ -6,6 +6,7 @@
 <link href="css/circle.css" rel="stylesheet" type="text/css">
 <script src="js/circles.js"></script>
 <link href="css/dashboard.css" rel="stylesheet" type="text/css" async>
+<link href="css/jquery.toaster.css" type="text/css" rel="stylesheet" />
 <link href = "css/jquery-ui.css" defer rel = "stylesheet" type="text/css">
 <link href="css/jquery.dataTables.min.css" defer rel="stylesheet" type="text/css">
 <script src="js/jquery.js"></script>
@@ -15,6 +16,7 @@
 <script src="js/bootstrap.js" defer></script>
 <script src="js/funnel.js"></script>
 <script src = "js/jquery-ui.js" defer></script>
+<script src = "js/jquery.toaster.js"></script>
 </head>
 <body>
 
@@ -1715,11 +1717,14 @@
 <!--All  Conrent Wrapper Ends--> 
 
 
+
 <div class="maskbg"></div>
 
  <script>
          jQuery(document).ready(function(){
-         
+              
+               normalToaster();
+
              jQuery('#overview-table').DataTable({
                  "pageLength":12,
                  "lengthChange": false,
@@ -1746,6 +1751,11 @@
                 jQuery('.all-content-wrapper .left-wrapper').toggleClass('open');
                 jQuery('.maskbg').toggle();
             });
+
+           
+
+           
+
 
 
             
@@ -2080,7 +2090,7 @@
              plotOptions: {
                  pie: {
                      size:'100%',
-                     innerSize:150,
+                     innerSize:100,
                      depth:0,
                      allowPointSelect: true,
                      cursor: 'pointer',
@@ -2097,13 +2107,13 @@
              },
          
              legend: {
-                    layout: 'vertical',
-                     align: 'left',
+                    layout: 'horizontal',
+                     align: 'center',
                      verticalAlign: 'bottom',
-                     floating:false,
+                     itemDistance: 10,
                      x:0,
                      y:10,
-                     floating: true,
+                     floating: false,
                      borderWidth: 0,
                      
                  },
@@ -4685,8 +4695,34 @@
     });
 */
          
-         
+       
       </script>
+
+
+      <script>
+        toastr.options = {
+          "closeButton": true,
+          "debug": false,
+          "newestOnTop": false,
+          "progressBar": false,
+          "positionClass": "toast-top-right",
+          "preventDuplicates": false,
+          "onclick": null,
+          "showDuration": "300",
+          "hideDuration": "10000",
+          "timeOut": "5000",
+          "extendedTimeOut": "1000",
+          "showEasing": "swing",
+          "hideEasing": "linear",
+          "showMethod": "fadeIn",
+          "hideMethod": "fadeOut"
+        }
+        function normalToaster() {
+          toastr.info('The event was added to your calendar. Check out all your events in your <a href="#">event overview</a>.', 'BP', {timeOut: 10000})
+        }
+
+       
+  </script>  
 
 </body>
 </html>
