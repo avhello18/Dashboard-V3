@@ -1,4 +1,8 @@
 @font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/Lato-regular.ttf');
+}
+@font-face {
     font-family: 'latobold';
     src: url('../fonts/Lato-Bold.ttf');
 }
